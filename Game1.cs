@@ -13,7 +13,7 @@ namespace Dogfighter
         MouseState mouseState;
         Vector2 location, origin;
         Rectangle sourceRectangle;
-        private Texture2D circkleTexture;
+        private Texture2D circleTexture;
         Rectangle circleHitbox;
 
         Plane plane;
@@ -30,15 +30,14 @@ namespace Dogfighter
         {
             // TODO: Add your initialization logic here
             base.Initialize();
-            plane = new Plane(planeTexture, 5f);
-            circleHitbox = new Rectangle(plane.Location.ToPoint(), (new Vector2(Convert.ToSingle(planeTexture.Width * 0.1), Convert.ToSingle(planeTexture.Width * 0.1)).ToPoint()));
+            plane = new Plane(planeTexture, 5f, circleTexture);
         }
 
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             planeTexture = Content.Load<Texture2D>("airplane");
-            circkleTexture = Content.Load<Texture2D>("circle");
+            circleTexture = Content.Load<Texture2D>("circle");
 
             // TODO: use this.Content to load your game content here
         }
@@ -47,10 +46,8 @@ namespace Dogfighter
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-
+            plane.Update(_graphics);
             // TODO: Add your update logic here
-            circleHitbox.Location = plane.Update(_graphics).ToPoint();
-            circleHitbox.Offset(-circleHitbox.Width/2, -circleHitbox.Height/2);
             base.Update(gameTime);
         }
 
@@ -60,9 +57,7 @@ namespace Dogfighter
 
             // TODO: Add your drawing code here
             _spriteBatch.Begin();
-            _spriteBatch.Draw(circkleTexture, circleHitbox, Color.White);
             plane.Draw(_spriteBatch);
-            
             _spriteBatch.End();
             base.Draw(gameTime);
         }
