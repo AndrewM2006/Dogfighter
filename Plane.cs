@@ -17,9 +17,8 @@ namespace Dogfighter
         private Rectangle _rectangle, _circleHitbox;
         private Vector2 _location, _origin, _destination, _movement;
         private Circle _circle;
-
         MouseState _mouseState;
-        private float _speed, _deltaX, _deltaY, _angle;
+        private float _speed, _angle;
 
         public Plane(Texture2D texture, float speed, Texture2D circleTexture)
         {
@@ -64,9 +63,23 @@ namespace Dogfighter
             }
         }
 
+        public float Angle()
+        {
+            return _angle;
+        }
+
+        public Vector2 Movement()
+        {
+            return _movement/=_speed;
+        }
+
+        public Vector2 Location()
+        {
+            return _location;
+        }
         public void Draw(SpriteBatch sprite)
         {
-            //sprite.Draw(_circleTexture, _circleHitbox, Color.White);
+            sprite.Draw(_circleTexture, _circleHitbox, Color.White);
             sprite.Draw(_texture, _location, _rectangle, Color.White, _angle, _origin, 0.1f, SpriteEffects.None, 1);
         }
 

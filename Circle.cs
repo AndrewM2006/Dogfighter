@@ -51,5 +51,10 @@ namespace Dogfighter
                 return false;
             }
         }
+
+        public bool IsOffscreen(GraphicsDeviceManager Graphics)
+        {
+           return (Center.X - Radius > Graphics.PreferredBackBufferWidth || Center.X + Radius < 0 || Center.Y - Radius > Graphics.PreferredBackBufferHeight || Center.Y + Radius < 0);
+        }
     }
 }
