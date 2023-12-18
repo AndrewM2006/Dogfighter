@@ -39,7 +39,7 @@ namespace Dogfighter
         private void Move(GraphicsDeviceManager Graphics)
         {
             _mouseState = Mouse.GetState();
-            if ((_location.Y > _mouseState.Y + 3 || _location.Y < _mouseState.Y -3) && (_location.X > _mouseState.X + 3 || _location.X < _mouseState.X - 3))
+            if ((_location.Y > _mouseState.Y + _speed/2 || _location.Y < _mouseState.Y - _speed / 2) && (_location.X > _mouseState.X + _speed / 2 || _location.X < _mouseState.X - _speed / 2))
             {
                 _destination = new Vector2(_mouseState.X, _mouseState.Y);
                 _movement = _destination - _location;
@@ -79,7 +79,7 @@ namespace Dogfighter
         }
         public void Draw(SpriteBatch sprite)
         {
-            sprite.Draw(_circleTexture, _circleHitbox, Color.White);
+            //sprite.Draw(_circleTexture, _circleHitbox, Color.White);
             sprite.Draw(_texture, _location, _rectangle, Color.White, _angle, _origin, 0.1f, SpriteEffects.None, 1);
         }
 
