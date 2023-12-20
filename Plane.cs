@@ -19,6 +19,7 @@ namespace Dogfighter
         private Circle _circle;
         MouseState _mouseState;
         private float _speed, _angle;
+        public int _ammo;
 
         public Plane(Texture2D texture, float speed, Texture2D circleTexture)
         {
@@ -29,11 +30,13 @@ namespace Dogfighter
             _origin = new Vector2(_texture.Width / 2, _texture.Height / 2);
             _circleHitbox = new Rectangle(_location.ToPoint(), (new Vector2(Convert.ToSingle(_texture.Width * 0.1), Convert.ToSingle(_texture.Width * 0.1)).ToPoint()));
             _circleTexture = circleTexture;
+            _ammo = 3;
         }
 
-        public void Update(GraphicsDeviceManager Graphics)
+        public void Update(GraphicsDeviceManager Graphics, List<Ammo> ammo)
         {
             Move(Graphics);
+            AmmoCollide(ammo);
         }
 
         private void Move(GraphicsDeviceManager Graphics)
@@ -61,6 +64,19 @@ namespace Dogfighter
                 }
                 _angle = (float)Math.Atan2(_location.Y - _mouseState.Y, _location.X - _mouseState.X);
             }
+        }
+
+        public List<Ammo> AmmoCollide(List<Ammo> ammo)
+        {
+            for (int i = 0; i < ammo.Count; i++)
+            {
+                if (_circle.Intersects(ammo[i].Circle))
+                {
+                    _ammo++;
+                    ammo.RemoveAt(i);
+                }
+            }
+            return ammo;
         }
 
         public float Angle()

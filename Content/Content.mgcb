@@ -25,6 +25,25 @@
 /processorParam:TextureFormat=Color
 /build:airplane.png
 
+#begin Ammo.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Ammo.png
+
+#begin AmmoAmount.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:AmmoAmount.spritefont
+
 #begin circle.png
 /importer:TextureImporter
 /processor:TextureProcessor

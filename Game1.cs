@@ -10,7 +10,7 @@ namespace Dogfighter
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-        Texture2D planeTexture, shotTexture;
+        Texture2D planeTexture, shotTexture, ammoTexture;
         MouseState mouseState;
         Vector2 location, origin;
         Rectangle sourceRectangle;
@@ -18,7 +18,11 @@ namespace Dogfighter
         Rectangle circleHitbox;
         KeyboardState keyboardState, previousState;
         List<Shot> shots;
+        List<Ammo> ammolist;
+        Random generator = new Random();
         Plane plane;
+        SpriteFont ammoamount;
+        int ammorate;
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -32,6 +36,8 @@ namespace Dogfighter
             base.Initialize();
             plane = new Plane(planeTexture, 5f, circleTexture);
             shots = new List<Shot>();
+            ammolist = new List<Ammo>();
+            ammorate = 10;
         }
 
         protected override void LoadContent()
@@ -40,6 +46,8 @@ namespace Dogfighter
             planeTexture = Content.Load<Texture2D>("airplane");
             circleTexture = Content.Load<Texture2D>("circle");
             shotTexture = Content.Load<Texture2D>("LaserShotRed");
+            ammoTexture = Content.Load<Texture2D>("Ammo");
+            ammoamount = Content.Load<SpriteFont>("AmmoAmount");
 
             // TODO: use this.Content to load your game content here
         }
@@ -50,10 +58,12 @@ namespace Dogfighter
                 Exit();
             previousState=keyboardState;
             keyboardState = Keyboard.GetState();
-            plane.Update(_graphics);
-            if (keyboardState.IsKeyDown(Keys.Space) && previousState.IsKeyUp(Keys.Space))
+            ammolist = plane.AmmoCollide(ammolist);
+            plane.Update(_graphics, ammolist);
+            if (keyboardState.IsKeyDown(Keys.Space) && previousState.IsKeyUp(Keys.Space) && plane._ammo>0)
             {
                 shots.Add(new Shot(shotTexture, 10f, plane.Angle(), plane.Location(), plane.Movement(), circleTexture));
+                plane._ammo--;
             }
             for (int i = 0; i < shots.Count; i++)
             {
@@ -62,6 +72,10 @@ namespace Dogfighter
                 {
                     shots.RemoveAt(i);
                 }
+            }
+            if (generator.Next(ammorate*60+1) == ammorate*60)
+            {
+                ammolist.Add(new Ammo(ammoTexture, Color.Red, circleTexture, _graphics));
             }
             // TODO: Add your update logic here
             base.Update(gameTime);
@@ -78,6 +92,11 @@ namespace Dogfighter
             {
                 shot.Draw(_spriteBatch);
             }
+            foreach (Ammo ammo in ammolist)
+            {
+                ammo.Draw(_spriteBatch);
+            }
+            _spriteBatch.DrawString(ammoamount, "Ammo: " + plane._ammo, new Vector2(725, 10), Color.White);
             _spriteBatch.End();
             base.Draw(gameTime);
         }
