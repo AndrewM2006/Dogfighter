@@ -19,6 +19,7 @@ namespace Dogfighter
         KeyboardState keyboardState, previousState;
         List<Shot> shots;
         List<Ammo> ammolist;
+        List<EnemyPlane> enemyPlanes;
         Random generator = new Random();
         Plane plane;
         SpriteFont ammoamount;
@@ -37,6 +38,7 @@ namespace Dogfighter
             plane = new Plane(planeTexture, 5f, circleTexture);
             shots = new List<Shot>();
             ammolist = new List<Ammo>();
+            enemyPlanes = new List<EnemyPlane>();
             ammorate = 10;
         }
 
@@ -73,9 +75,22 @@ namespace Dogfighter
                     shots.RemoveAt(i);
                 }
             }
+            for (int i =0;  i < enemyPlanes.Count; i++)
+            {
+                enemyPlanes[i].Update(plane, shots);
+                shots = enemyPlanes[i].ShotCollide(shots);
+                if (enemyPlanes[i].ShotDown)
+                {
+                    enemyPlanes.RemoveAt(i);
+                }
+            }
             if (generator.Next(ammorate*60+1) == ammorate*60)
             {
                 ammolist.Add(new Ammo(ammoTexture, Color.Red, circleTexture, _graphics));
+            }
+            if (generator.Next(601) == 600)
+            {
+                enemyPlanes.Add(new EnemyPlane(planeTexture, 3f, circleTexture, 10f, _graphics));
             }
             // TODO: Add your update logic here
             base.Update(gameTime);
@@ -87,6 +102,10 @@ namespace Dogfighter
 
             // TODO: Add your drawing code here
             _spriteBatch.Begin();
+            foreach (EnemyPlane enemyPlane in enemyPlanes)
+            {
+                enemyPlane.Draw(_spriteBatch);
+            }
             plane.Draw(_spriteBatch);
             foreach (Shot shot in shots)
             {

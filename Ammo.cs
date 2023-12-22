@@ -40,7 +40,7 @@ namespace Dogfighter
 
         public void Draw(SpriteBatch sprite)
         {
-            //sprite.Draw(_circleTexture, _circleHitbox, Color.White);
+            sprite.Draw(_circleTexture, _circleHitbox, Color.White);
             sprite.Draw(_texture, _location, _rectangle, _color, _angle, _origin, 0.4f, SpriteEffects.None, 1);
         }
     }
