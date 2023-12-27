@@ -14,13 +14,14 @@ namespace Dogfighter
         private Texture2D _texture;
         private Texture2D _circleTexture;
         private Rectangle _rectangle, _circleHitbox;
-        private Vector2 _location, _origin, _destination, _movement;
+        private Vector2 _location, _origin, _movement;
         private Circle _circle;
-        private float _speed, _angle, _firingRate;
+        private float _speed, _angle, _firingRate, _seconds, _startTime, _shotSpeed;
         public bool ShotDown = false;
+        public List<Shot> shots = new List<Shot> ();
         Random generator = new Random();
 
-        public EnemyPlane(Texture2D texture, float speed, Texture2D circleTexture, float firingRate, GraphicsDeviceManager Graphics)
+        public EnemyPlane(Texture2D texture, float speed, Texture2D circleTexture, float firingRate, GraphicsDeviceManager Graphics, float shotSpeed)
         {
             _texture = texture;
             _speed = speed;
@@ -48,6 +49,7 @@ namespace Dogfighter
             _firingRate = firingRate;
             _circleHitbox = new Rectangle(_location.ToPoint(), (new Vector2(Convert.ToSingle(_texture.Width * 0.1), Convert.ToSingle(_texture.Width * 0.1)).ToPoint()));
             _circleTexture = circleTexture;
+            _shotSpeed = shotSpeed;
         }
 
         private void Move(Plane plane)
@@ -70,14 +72,26 @@ namespace Dogfighter
 
         public void Draw(SpriteBatch sprite)
         {
-            sprite.Draw(_circleTexture, _circleHitbox, Color.White);
+            //sprite.Draw(_circleTexture, _circleHitbox, Color.White);
             sprite.Draw(_texture, _location, _rectangle, Color.White, _angle, _origin, 0.1f, SpriteEffects.None, 1);
+            foreach (Shot shot in shots)
+            {
+                shot.Draw(sprite);
+            }
         }
 
-        public void Update(Plane plane, List<Shot> shot)
+        public void Update(Plane plane, List<Shot> shot, float totalSeconds, Texture2D shotTexture, GraphicsDeviceManager Graphics)
         {
+            _seconds = (float)totalSeconds - _startTime;
             Move(plane);
             ShotCollide(shot);
+            if (_seconds >= _firingRate)
+            {
+                Shoot(shotTexture);
+                _startTime = totalSeconds;
+            }
+            UpdateShot(Graphics);
+            plane.ShotCollide(shots);
         }
         public List<Shot> ShotCollide(List<Shot> shot)
         {
@@ -91,7 +105,61 @@ namespace Dogfighter
             }
             return shot;
         }
+
+        public List<Shot> ShotCollide(List<Shot> shot, int enemy)
+        {
+            for (int i = 0; i < shot.Count; i++)
+            {
+                if (_circle.Intersects(shot[i].Circle))
+                {
+                    shot.RemoveAt(i);
+                    ShotDown = true;
+                }
+            }
+            return shot;
+        }
+
+        public void SelfCollide(List<EnemyPlane> enemies, int enemyNum)
+        {
+            for (int i = 0; i < enemies.Count; i++)
+            {
+                if (_circle.Intersects(enemies[i].Circle) && i!=enemyNum)
+                {
+                    ShotDown = true;
+                }
+            }
+        }
+
+        public List<Shot> SuperShotCollide(List<Shot> shot)
+        {
+            for (int i = 0; i < shot.Count; i++)
+            {
+                if (_circle.Intersects(shot[i].Circle))
+                {
+                    ShotDown = true;
+                }
+            }
+            return shot;
+        }
+
+        private void UpdateShot(GraphicsDeviceManager Graphics)
+        {
+            for (int i = 0; i < shots.Count; i++)
+            {
+                shots[i].Update(Graphics);
+                if (shots[i].Offscreen)
+                {
+                    shots.RemoveAt(i);
+                }
+            }
+        }
         
+        private void Shoot(Texture2D shotTexture)
+        {
+            shots.Add(new Shot(shotTexture, _shotSpeed, _angle, _location, _movement/_speed, _circleTexture, Color.Blue));
+        }
+
+        public Circle Circle { get { return _circle; } }
 
     }
 }

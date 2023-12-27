@@ -19,7 +19,7 @@ namespace Dogfighter
         private Circle _circle;
         MouseState _mouseState;
         private float _speed, _angle;
-        public int _ammo;
+        public int _ammo, _superammo;
 
         public Plane(Texture2D texture, float speed, Texture2D circleTexture)
         {
@@ -30,13 +30,15 @@ namespace Dogfighter
             _origin = new Vector2(_texture.Width / 2, _texture.Height / 2);
             _circleHitbox = new Rectangle(_location.ToPoint(), (new Vector2(Convert.ToSingle(_texture.Width * 0.1), Convert.ToSingle(_texture.Width * 0.1)).ToPoint()));
             _circleTexture = circleTexture;
-            _ammo = 3;
+            _ammo = 1;
+            _superammo = 0;
         }
 
-        public void Update(GraphicsDeviceManager Graphics, List<Ammo> ammo)
+        public void Update(GraphicsDeviceManager Graphics, List<Ammo> ammo, List<EnemyPlane> enemies)
         {
             Move(Graphics);
             AmmoCollide(ammo);
+            EnemyCollide(enemies);
         }
 
         private void Move(GraphicsDeviceManager Graphics)
@@ -72,11 +74,40 @@ namespace Dogfighter
             {
                 if (_circle.Intersects(ammo[i].Circle))
                 {
-                    _ammo++;
+                    if (ammo[i]._color == Color.Red)
+                    {
+                        _ammo++;
+                    }
+                    else
+                    {
+                        _superammo++;
+                    }
                     ammo.RemoveAt(i);
                 }
             }
             return ammo;
+        }
+
+        public void ShotCollide(List<Shot> shots)
+        {
+            foreach (Shot shot in shots)
+            {
+                if (_circle.Intersects(shot.Circle))
+                {
+                    Environment.Exit(0);
+                }
+            }
+        }
+
+        public void EnemyCollide(List<EnemyPlane> enemies)
+        {
+            foreach (EnemyPlane enemy in enemies)
+            {
+                if (_circle.Intersects(enemy.Circle))
+                {
+                    Environment.Exit(0);
+                }
+            }
         }
 
         public float Angle()
@@ -95,7 +126,7 @@ namespace Dogfighter
         }
         public void Draw(SpriteBatch sprite)
         {
-            sprite.Draw(_circleTexture, _circleHitbox, Color.White);
+            //sprite.Draw(_circleTexture, _circleHitbox, Color.White);
             sprite.Draw(_texture, _location, _rectangle, Color.White, _angle, _origin, 0.1f, SpriteEffects.None, 1);
         }
 

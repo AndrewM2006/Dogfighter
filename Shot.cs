@@ -16,8 +16,9 @@ namespace Dogfighter
         private Circle _circle;
         private Rectangle _circleHitbox, _rectangle;
         public bool Offscreen = false;
+        public Color _color;
 
-        public Shot(Texture2D texture, float speed, float angle, Vector2 location, Vector2 movement, Texture2D circleTexture)
+        public Shot(Texture2D texture, float speed, float angle, Vector2 location, Vector2 movement, Texture2D circleTexture, Color color)
         {
             _texture = texture;
             _speed = speed;
@@ -28,6 +29,7 @@ namespace Dogfighter
             _circleHitbox = new Rectangle(_location.ToPoint(), (new Vector2(Convert.ToSingle(_texture.Width * 0.03), Convert.ToSingle(_texture.Width * 0.03)).ToPoint()));
             _circleTexture = circleTexture;
             _rectangle = new Rectangle(0, 0, _texture.Width, _texture.Height);
+            _color = color;
         }
 
         private void Move(GraphicsDeviceManager Graphics)
@@ -56,8 +58,8 @@ namespace Dogfighter
 
         public void Draw(SpriteBatch sprite)
         {
-            sprite.Draw(_circleTexture, _circleHitbox, Color.White);
-            sprite.Draw(_texture, _location, _rectangle, Color.White, _angle, _origin, 0.03f, SpriteEffects.None, 1);
+            //sprite.Draw(_circleTexture, _circleHitbox, Color.White);
+            sprite.Draw(_texture, _location, _rectangle, _color, _angle, _origin, 0.03f, SpriteEffects.None, 1);
         }
 
         public Circle Circle { get { return _circle; } }

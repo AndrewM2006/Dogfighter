@@ -15,7 +15,7 @@ namespace Dogfighter
         private Vector2 _origin, _location;
         private float _angle;
         Random generator = new Random();
-        private Color _color;
+        public Color _color;
         private Circle _circle;
         public Ammo(Texture2D texture, Color color, Texture2D circleTexture, GraphicsDeviceManager Graphics)
         {
@@ -40,7 +40,7 @@ namespace Dogfighter
 
         public void Draw(SpriteBatch sprite)
         {
-            sprite.Draw(_circleTexture, _circleHitbox, Color.White);
+            //sprite.Draw(_circleTexture, _circleHitbox, Color.White);
             sprite.Draw(_texture, _location, _rectangle, _color, _angle, _origin, 0.4f, SpriteEffects.None, 1);
         }
     }
