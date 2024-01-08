@@ -20,8 +20,9 @@ namespace Dogfighter
         MouseState _mouseState;
         private float _speed, _angle;
         public int _ammo, _superammo;
+        public bool _dead;
 
-        public Plane(Texture2D texture, float speed, Texture2D circleTexture)
+        public Plane(Texture2D texture, float speed, Texture2D circleTexture, int startAmmo)
         {
             _texture = texture;
             _speed = speed;
@@ -30,8 +31,9 @@ namespace Dogfighter
             _origin = new Vector2(_texture.Width / 2, _texture.Height / 2);
             _circleHitbox = new Rectangle(_location.ToPoint(), (new Vector2(Convert.ToSingle(_texture.Width * 0.1), Convert.ToSingle(_texture.Width * 0.1)).ToPoint()));
             _circleTexture = circleTexture;
-            _ammo = 1;
+            _ammo = startAmmo;
             _superammo = 0;
+            _dead = false;
         }
 
         public void Update(GraphicsDeviceManager Graphics, List<Ammo> ammo, List<EnemyPlane> enemies)
@@ -94,7 +96,7 @@ namespace Dogfighter
             {
                 if (_circle.Intersects(shot.Circle))
                 {
-                    Environment.Exit(0);
+                    _dead = true;
                 }
             }
         }
@@ -105,7 +107,7 @@ namespace Dogfighter
             {
                 if (_circle.Intersects(enemy.Circle))
                 {
-                    Environment.Exit(0);
+                    _dead = true;
                 }
             }
         }

@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 
 namespace Dogfighter
 {
@@ -15,14 +16,20 @@ namespace Dogfighter
         private Texture2D circleTexture;
         KeyboardState keyboardState, previousState;
         List<Shot> shots, supershots;
-        List<Ammo> ammolist, superammolist;
+        List<Ammo> ammolist;
         List<EnemyPlane> enemyPlanes;
         Random generator = new Random();
         Plane plane;
         SpriteFont ammoamount;
-        int ammorate, enemyrate, superammoRate;
+        int ammorate, enemyrate, superammoRate, startAmmo;
         private FrameCounter frameCounter = new FrameCounter();
         float planeSpeed, enemySpeed, enemyFiringRate, enemyShotSpeed;
+        enum Screen
+        {
+            Start,
+            Play
+        }
+        Screen screen;
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -34,11 +41,11 @@ namespace Dogfighter
         {
             // TODO: Add your initialization logic here
             base.Initialize();
-            planeSpeed = 3; enemySpeed = 2; enemyFiringRate = 10; enemyShotSpeed = 4f;
-            plane = new Plane(planeTexture, planeSpeed, circleTexture);
+            screen = Screen.Start;
+            planeSpeed = 3; enemySpeed = 2; enemyFiringRate = 10; enemyShotSpeed = 4f; startAmmo=1;
+            plane = new Plane(planeTexture, planeSpeed, circleTexture, startAmmo);
             shots = new List<Shot>(); supershots = new List<Shot>();
             ammolist = new List<Ammo>();
-            superammolist = new List<Ammo>();
             enemyPlanes = new List<EnemyPlane>();
             ammorate = 10; enemyrate = 12; superammoRate = 30;
         }
@@ -59,60 +66,81 @@ namespace Dogfighter
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-            previousMousestate = mouseState;
-            mouseState = Mouse.GetState();
-            previousState=keyboardState;
-            keyboardState = Keyboard.GetState();
-            ammolist = plane.AmmoCollide(ammolist);
-            plane.Update(_graphics, ammolist, enemyPlanes);
-            if (keyboardState.IsKeyDown(Keys.Space) && previousState.IsKeyUp(Keys.Space) && plane._ammo>0)
+            if (screen == Screen.Start)
             {
-                shots.Add(new Shot(shotTexture, 10f, plane.Angle(), plane.Location(), plane.Movement(), circleTexture, Color.White));
-                plane._ammo--;
-            }
-            if (mouseState.LeftButton == ButtonState.Pressed && previousMousestate.LeftButton == ButtonState.Released && plane._superammo > 0)
-            {
-                supershots.Add(new Shot(shotTexture, 10f, plane.Angle(), plane.Location(), plane.Movement(), circleTexture, Color.Green));
-                plane._superammo--;
-            }
-            for (int i = 0; i < shots.Count; i++)
-            {
-                shots[i].Update(_graphics);
-                if (shots[i].Offscreen)
+                mouseState = Mouse.GetState();
+                if (mouseState.LeftButton == ButtonState.Pressed)
                 {
-                    shots.RemoveAt(i);
+                    screen = Screen.Play;
                 }
             }
-            for (int i = 0; i < supershots.Count; i++)
+            else
             {
-                supershots[i].Update(_graphics);
-                if (supershots[i].Offscreen)
+                previousMousestate = mouseState;
+                mouseState = Mouse.GetState();
+                previousState = keyboardState;
+                keyboardState = Keyboard.GetState();
+                ammolist = plane.AmmoCollide(ammolist);
+                plane.Update(_graphics, ammolist, enemyPlanes);
+                if (keyboardState.IsKeyDown(Keys.Space) && previousState.IsKeyUp(Keys.Space) && plane._ammo > 0)
                 {
-                    supershots.RemoveAt(i);
+                    shots.Add(new Shot(shotTexture, 10f, plane.Angle(), plane.Location(), plane.Movement(), circleTexture, Color.White));
+                    plane._ammo--;
                 }
-            }
-            for (int i =0;  i < enemyPlanes.Count; i++)
-            {
-                enemyPlanes[i].Update(plane, shots, (float)gameTime.TotalGameTime.TotalSeconds, shotTexture, _graphics);
-                shots = enemyPlanes[i].ShotCollide(shots);
-                supershots = enemyPlanes[i].SuperShotCollide(supershots);
-                enemyPlanes[i].SelfCollide(enemyPlanes, i);
-                for (int j=0; j<enemyPlanes.Count; j++)
+                if (mouseState.LeftButton == ButtonState.Pressed && previousMousestate.LeftButton == ButtonState.Released && plane._superammo > 0)
                 {
-                    if (i != j)
+                    supershots.Add(new Shot(shotTexture, 10f, plane.Angle(), plane.Location(), plane.Movement(), circleTexture, Color.Green));
+                    plane._superammo--;
+                }
+                for (int i = 0; i < shots.Count; i++)
+                {
+                    shots[i].Update(_graphics);
+                    if (shots[i].Offscreen)
                     {
-                        enemyPlanes[i].ShotCollide(enemyPlanes[j].shots);
+                        shots.RemoveAt(i);
                     }
                 }
-                if (enemyPlanes[i].ShotDown)
+                for (int i = 0; i < supershots.Count; i++)
                 {
-                    enemyPlanes.RemoveAt(i);
+                    supershots[i].Update(_graphics);
+                    if (supershots[i].Offscreen)
+                    {
+                        supershots.RemoveAt(i);
+                    }
                 }
-            }
-            Spawn(gameTime);
-            if (generator.Next(901) == 0)
-            {
-                DifficultyIncrease();
+                for (int i = 0; i < enemyPlanes.Count; i++)
+                {
+                    enemyPlanes[i].Update(plane, shots, (float)gameTime.TotalGameTime.TotalSeconds, shotTexture, _graphics);
+                    shots = enemyPlanes[i].ShotCollide(shots);
+                    supershots = enemyPlanes[i].SuperShotCollide(supershots);
+                    enemyPlanes[i].SelfCollide(enemyPlanes, i);
+                    for (int j = 0; j < enemyPlanes.Count; j++)
+                    {
+                        if (i != j)
+                        {
+                            enemyPlanes[i].ShotCollide(enemyPlanes[j].shots);
+                        }
+                    }
+                    if (enemyPlanes[i].ShotDown)
+                    {
+                        enemyPlanes.RemoveAt(i);
+                    }
+                }
+                Spawn(gameTime);
+                if (generator.Next(901) == 0)
+                {
+                    DifficultyIncrease();
+                }
+                if (plane._dead)
+                {
+                    screen = Screen.Start;
+                    plane._dead = false;
+                    ammolist.Clear();
+                    enemyPlanes.Clear();
+                    shots.Clear();
+                    supershots.Clear();
+                    enemyrate = 12; enemySpeed = 2; enemyFiringRate = 10; enemyShotSpeed = 4f;
+                }
             }
             // TODO: Add your update logic here
             base.Update(gameTime);
@@ -123,27 +151,34 @@ namespace Dogfighter
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
-            _spriteBatch.Begin();
-            foreach (EnemyPlane enemyPlane in enemyPlanes)
+            if (screen == Screen.Start)
             {
-                enemyPlane.Draw(_spriteBatch);
+
             }
-            plane.Draw(_spriteBatch);
-            foreach (Shot shot in shots)
+            else
             {
-                shot.Draw(_spriteBatch);
+                _spriteBatch.Begin();
+                foreach (EnemyPlane enemyPlane in enemyPlanes)
+                {
+                    enemyPlane.Draw(_spriteBatch);
+                }
+                plane.Draw(_spriteBatch);
+                foreach (Shot shot in shots)
+                {
+                    shot.Draw(_spriteBatch);
+                }
+                foreach (Shot shot in supershots)
+                {
+                    shot.Draw(_spriteBatch);
+                }
+                foreach (Ammo ammo in ammolist)
+                {
+                    ammo.Draw(_spriteBatch);
+                }
+                _spriteBatch.DrawString(ammoamount, "Ammo: " + plane._ammo, new Vector2(725, 10), Color.White);
+                _spriteBatch.DrawString(ammoamount, "Super Ammo: " + plane._superammo, new Vector2(679, 30), Color.White);
+                _spriteBatch.End();
             }
-            foreach (Shot shot in supershots)
-            {
-                shot.Draw(_spriteBatch);
-            }
-            foreach (Ammo ammo in ammolist)
-            {
-                ammo.Draw(_spriteBatch);
-            }
-            _spriteBatch.DrawString(ammoamount, "Ammo: " + plane._ammo, new Vector2(725, 10), Color.White);
-            _spriteBatch.DrawString(ammoamount, "Super Ammo: " + plane._superammo, new Vector2(679, 30), Color.White);
-            _spriteBatch.End();
             base.Draw(gameTime);
         }
 
