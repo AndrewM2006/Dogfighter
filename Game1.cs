@@ -27,6 +27,7 @@ namespace Dogfighter
         enum Screen
         {
             Start,
+            Shop,
             Play
         }
         Screen screen;
@@ -74,7 +75,7 @@ namespace Dogfighter
                     screen = Screen.Play;
                 }
             }
-            else
+            else if (screen == Screen.Play)
             {
                 previousMousestate = mouseState;
                 mouseState = Mouse.GetState();
@@ -142,6 +143,10 @@ namespace Dogfighter
                     enemyrate = 12; enemySpeed = 2; enemyFiringRate = 10; enemyShotSpeed = 4f;
                 }
             }
+            else
+            {
+
+            }
             // TODO: Add your update logic here
             base.Update(gameTime);
         }
@@ -155,7 +160,7 @@ namespace Dogfighter
             {
 
             }
-            else
+            else if (screen == Screen.Play)
             {
                 _spriteBatch.Begin();
                 foreach (EnemyPlane enemyPlane in enemyPlanes)
@@ -178,6 +183,10 @@ namespace Dogfighter
                 _spriteBatch.DrawString(ammoamount, "Ammo: " + plane._ammo, new Vector2(725, 10), Color.White);
                 _spriteBatch.DrawString(ammoamount, "Super Ammo: " + plane._superammo, new Vector2(679, 30), Color.White);
                 _spriteBatch.End();
+            }
+            else
+            {
+
             }
             base.Draw(gameTime);
         }
