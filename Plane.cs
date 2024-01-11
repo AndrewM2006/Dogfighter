@@ -22,7 +22,7 @@ namespace Dogfighter
         public int _ammo, _superammo;
         public bool _dead;
 
-        public Plane(Texture2D texture, float speed, Texture2D circleTexture, int startAmmo)
+        public Plane(Texture2D texture, float speed, Texture2D circleTexture, int startAmmo, int startSuper)
         {
             _texture = texture;
             _speed = speed;
@@ -32,7 +32,7 @@ namespace Dogfighter
             _circleHitbox = new Rectangle(_location.ToPoint(), (new Vector2(Convert.ToSingle(_texture.Width * 0.1), Convert.ToSingle(_texture.Width * 0.1)).ToPoint()));
             _circleTexture = circleTexture;
             _ammo = startAmmo;
-            _superammo = 0;
+            _superammo = startSuper;
             _dead = false;
         }
 
