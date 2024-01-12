@@ -18,7 +18,7 @@ namespace Dogfighter
         private Vector2 _location, _origin, _destination, _movement;
         private Circle _circle;
         MouseState _mouseState;
-        private float _speed, _angle;
+        public float _speed, _angle;
         public int _ammo, _superammo;
         public bool _dead;
 
@@ -116,6 +116,7 @@ namespace Dogfighter
         {
             return _angle;
         }
+
 
         public Vector2 Movement()
         {

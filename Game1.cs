@@ -35,7 +35,7 @@ namespace Dogfighter
         int ammorate, enemyrate, superammoRate, startAmmo, startSuper, kills;
         private FrameCounter frameCounter = new FrameCounter();
         float planeSpeed, enemySpeed, enemyFiringRate, enemyShotSpeed;
-        float seconds;
+        float seconds, score;
         float startTime;
         bool planeAnimation;
         int store, play, h2p, achievments;
@@ -45,7 +45,9 @@ namespace Dogfighter
         {
             Start,
             Shop,
-            Play
+            Play,
+            Achievements,
+            H2P
         }
         Screen screen;
         public Game1()
@@ -124,7 +126,12 @@ namespace Dogfighter
                 previousMousestate = mouseState;
                 mouseState = Mouse.GetState();
                 mouseLocation = new Point(mouseState.X, mouseState.Y);
-                if (achievmentsRect.Contains(mouseLocation))
+                if (achievmentsRect.Contains(mouseLocation) && mouseState.LeftButton == ButtonState.Pressed && previousMousestate.LeftButton == ButtonState.Released)
+                {
+                    screen = Screen.Achievements;
+                    logoFrame = 0;
+                }
+                else if (achievmentsRect.Contains(mouseLocation))
                 {
                     achievments = 1;
                 }
@@ -132,9 +139,12 @@ namespace Dogfighter
                 {
                     achievments = 0;
                 }
-                if (playRect.Contains(mouseLocation)&& mouseState.LeftButton == ButtonState.Pressed && previousMousestate.LeftButton == ButtonState.Released)
+                if (playRect.Contains(mouseLocation) && mouseState.LeftButton == ButtonState.Pressed && previousMousestate.LeftButton == ButtonState.Released)
                 {
                     planeAnimation = true;
+                    plane._ammo = startAmmo;
+                    plane._superammo = startSuper;
+                    plane._speed = planeSpeed;
                 }
                 else if ((playRect.Contains(mouseLocation)))
                 {
@@ -144,7 +154,12 @@ namespace Dogfighter
                 {
                     play = 0;
                 }
-                if (h2pRect.Contains(mouseLocation))
+                if (h2pRect.Contains(mouseLocation) && mouseState.LeftButton == ButtonState.Pressed && previousMousestate.LeftButton == ButtonState.Released)
+                {
+                    screen = Screen.H2P;
+                    logoFrame = 0;
+                }
+                else if (h2pRect.Contains(mouseLocation))
                 {
                     h2p = 1;
                 }
@@ -152,7 +167,12 @@ namespace Dogfighter
                 {
                     h2p = 0;
                 }
-                if (storeRect.Contains(mouseLocation))
+                if (storeRect.Contains(mouseLocation) && mouseState.LeftButton == ButtonState.Pressed && previousMousestate.LeftButton == ButtonState.Released)
+                {
+                    screen = Screen.Shop;
+                    logoFrame = 0;
+                }
+                else if (storeRect.Contains(mouseLocation))
                 {
                     store = 1;
                 }
@@ -170,7 +190,9 @@ namespace Dogfighter
                         if (planeFrame == planeFrames.Count)
                         {
                             planeAnimation = false;
+                            plane._dead = false;
                             screen = Screen.Play;
+                            startTime = (float)gameTime.TotalGameTime.TotalSeconds;
                         }
                     }
                 }
@@ -237,15 +259,24 @@ namespace Dogfighter
                 {
                     screen = Screen.Start;
                     planeFrame = 0; logoFrame = 0;
-                    plane._dead = false;
                     ammolist.Clear();
                     enemyPlanes.Clear();
                     shots.Clear();
                     supershots.Clear();
                     enemyrate = 12; enemySpeed = 2; enemyFiringRate = 10; enemyShotSpeed = 4f;
+                    score = (float)(Math.Round(seconds, 2) / 10 + kills);
+                    kills = 0;
                 }
             }
-            else
+            else if (screen == Screen.Shop)
+            {
+
+            }
+            else if (screen == Screen.Achievements)
+            {
+
+            }
+            else if (screen == Screen.H2P)
             {
 
             }
@@ -298,11 +329,26 @@ namespace Dogfighter
                 }
                 _spriteBatch.DrawString(ammoamount, "Ammo: " + plane._ammo, new Vector2(725, 10), Color.White);
                 _spriteBatch.DrawString(ammoamount, "Super Ammo: " + plane._superammo, new Vector2(679, 30), Color.White);
+                _spriteBatch.DrawString(ammoamount, "Kills: " + kills, new Vector2(742, 50), Color.White);
                 _spriteBatch.End();
             }
-            else
+            else if (screen == Screen.Shop)
             {
-
+                _spriteBatch.Begin();
+                _spriteBatch.Draw(planeFrames[0], new Rectangle(0, 0, _graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight), Color.LightBlue);
+                _spriteBatch.End();
+            }
+            else if (screen == Screen.Achievements)
+            {
+                _spriteBatch.Begin();
+                _spriteBatch.Draw(planeFrames[0], new Rectangle(0, 0, _graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight), Color.LightBlue);
+                _spriteBatch.End();
+            }
+            else if (screen == Screen.H2P)
+            {
+                _spriteBatch.Begin();
+                _spriteBatch.Draw(planeFrames[0], new Rectangle(0, 0, _graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight), Color.LightBlue);
+                _spriteBatch.End();
             }
             base.Draw(gameTime);
         }
