@@ -13,6 +13,18 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin AACoin.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:AACoin.png
+
 #begin Achievements.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -49,6 +61,42 @@
 /processorParam:TextureFormat=Color
 /build:airplane.png
 
+#begin airplane2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:airplane2.png
+
+#begin airplane3.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:airplane3.png
+
+#begin airplane4.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:airplane4.png
+
 #begin Ammo.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -79,6 +127,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:circle.png
+
+#begin Copy of frame_0_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_0_delay-0.06s.gif
 
 #begin Copy of frame_00_delay-0.07s.gif
 /importer:TextureImporter
@@ -200,6 +260,30 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_09_delay-0.07s.gif
 
+#begin Copy of frame_1_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_1_delay-0.06s.gif
+
+#begin Copy of frame_10_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_10_delay-0.06s.gif
+
 #begin Copy of frame_10_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -211,6 +295,138 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_10_delay-0.07s.gif
+
+#begin Copy of frame_100_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_100_delay-0.06s.gif
+
+#begin Copy of frame_101_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_101_delay-0.06s.gif
+
+#begin Copy of frame_102_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_102_delay-0.06s.gif
+
+#begin Copy of frame_103_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_103_delay-0.06s.gif
+
+#begin Copy of frame_104_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_104_delay-0.06s.gif
+
+#begin Copy of frame_105_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_105_delay-0.06s.gif
+
+#begin Copy of frame_106_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_106_delay-0.06s.gif
+
+#begin Copy of frame_107_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_107_delay-0.06s.gif
+
+#begin Copy of frame_108_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_108_delay-0.06s.gif
+
+#begin Copy of frame_109_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_109_delay-0.06s.gif
+
+#begin Copy of frame_11_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_11_delay-0.06s.gif
 
 #begin Copy of frame_11_delay-0.07s.gif
 /importer:TextureImporter
@@ -224,6 +440,138 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_11_delay-0.07s.gif
 
+#begin Copy of frame_110_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_110_delay-0.06s.gif
+
+#begin Copy of frame_111_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_111_delay-0.06s.gif
+
+#begin Copy of frame_112_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_112_delay-0.06s.gif
+
+#begin Copy of frame_113_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_113_delay-0.06s.gif
+
+#begin Copy of frame_114_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_114_delay-0.06s.gif
+
+#begin Copy of frame_115_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_115_delay-0.06s.gif
+
+#begin Copy of frame_116_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_116_delay-0.06s.gif
+
+#begin Copy of frame_117_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_117_delay-0.06s.gif
+
+#begin Copy of frame_118_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_118_delay-0.06s.gif
+
+#begin Copy of frame_119_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_119_delay-0.06s.gif
+
+#begin Copy of frame_12_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_12_delay-0.06s.gif
+
 #begin Copy of frame_12_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -235,6 +583,138 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_12_delay-0.07s.gif
+
+#begin Copy of frame_120_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_120_delay-0.06s.gif
+
+#begin Copy of frame_121_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_121_delay-0.06s.gif
+
+#begin Copy of frame_122_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_122_delay-0.06s.gif
+
+#begin Copy of frame_123_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_123_delay-0.06s.gif
+
+#begin Copy of frame_124_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_124_delay-0.06s.gif
+
+#begin Copy of frame_125_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_125_delay-0.06s.gif
+
+#begin Copy of frame_126_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_126_delay-0.06s.gif
+
+#begin Copy of frame_127_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_127_delay-0.06s.gif
+
+#begin Copy of frame_128_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_128_delay-0.06s.gif
+
+#begin Copy of frame_129_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_129_delay-0.06s.gif
+
+#begin Copy of frame_13_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_13_delay-0.06s.gif
 
 #begin Copy of frame_13_delay-0.07s.gif
 /importer:TextureImporter
@@ -248,6 +728,138 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_13_delay-0.07s.gif
 
+#begin Copy of frame_130_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_130_delay-0.06s.gif
+
+#begin Copy of frame_131_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_131_delay-0.06s.gif
+
+#begin Copy of frame_132_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_132_delay-0.06s.gif
+
+#begin Copy of frame_133_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_133_delay-0.06s.gif
+
+#begin Copy of frame_134_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_134_delay-0.06s.gif
+
+#begin Copy of frame_135_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_135_delay-0.06s.gif
+
+#begin Copy of frame_136_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_136_delay-0.06s.gif
+
+#begin Copy of frame_137_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_137_delay-0.06s.gif
+
+#begin Copy of frame_138_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_138_delay-0.06s.gif
+
+#begin Copy of frame_139_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_139_delay-0.06s.gif
+
+#begin Copy of frame_14_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_14_delay-0.06s.gif
+
 #begin Copy of frame_14_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -259,6 +871,138 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_14_delay-0.07s.gif
+
+#begin Copy of frame_140_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_140_delay-0.06s.gif
+
+#begin Copy of frame_141_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_141_delay-0.06s.gif
+
+#begin Copy of frame_142_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_142_delay-0.06s.gif
+
+#begin Copy of frame_143_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_143_delay-0.06s.gif
+
+#begin Copy of frame_144_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_144_delay-0.06s.gif
+
+#begin Copy of frame_145_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_145_delay-0.06s.gif
+
+#begin Copy of frame_146_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_146_delay-0.06s.gif
+
+#begin Copy of frame_147_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_147_delay-0.06s.gif
+
+#begin Copy of frame_148_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_148_delay-0.06s.gif
+
+#begin Copy of frame_149_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_149_delay-0.06s.gif
+
+#begin Copy of frame_15_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_15_delay-0.06s.gif
 
 #begin Copy of frame_15_delay-0.07s.gif
 /importer:TextureImporter
@@ -272,6 +1016,138 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_15_delay-0.07s.gif
 
+#begin Copy of frame_150_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_150_delay-0.06s.gif
+
+#begin Copy of frame_151_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_151_delay-0.06s.gif
+
+#begin Copy of frame_152_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_152_delay-0.06s.gif
+
+#begin Copy of frame_153_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_153_delay-0.06s.gif
+
+#begin Copy of frame_154_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_154_delay-0.06s.gif
+
+#begin Copy of frame_155_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_155_delay-0.06s.gif
+
+#begin Copy of frame_156_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_156_delay-0.06s.gif
+
+#begin Copy of frame_157_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_157_delay-0.06s.gif
+
+#begin Copy of frame_158_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_158_delay-0.06s.gif
+
+#begin Copy of frame_159_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_159_delay-0.06s.gif
+
+#begin Copy of frame_16_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_16_delay-0.06s.gif
+
 #begin Copy of frame_16_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -283,6 +1159,138 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_16_delay-0.07s.gif
+
+#begin Copy of frame_160_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_160_delay-0.06s.gif
+
+#begin Copy of frame_161_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_161_delay-0.06s.gif
+
+#begin Copy of frame_162_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_162_delay-0.06s.gif
+
+#begin Copy of frame_163_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_163_delay-0.06s.gif
+
+#begin Copy of frame_164_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_164_delay-0.06s.gif
+
+#begin Copy of frame_165_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_165_delay-0.06s.gif
+
+#begin Copy of frame_166_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_166_delay-0.06s.gif
+
+#begin Copy of frame_167_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_167_delay-0.06s.gif
+
+#begin Copy of frame_168_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_168_delay-0.06s.gif
+
+#begin Copy of frame_169_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_169_delay-0.06s.gif
+
+#begin Copy of frame_17_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_17_delay-0.06s.gif
 
 #begin Copy of frame_17_delay-0.07s.gif
 /importer:TextureImporter
@@ -296,6 +1304,138 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_17_delay-0.07s.gif
 
+#begin Copy of frame_170_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_170_delay-0.06s.gif
+
+#begin Copy of frame_171_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_171_delay-0.06s.gif
+
+#begin Copy of frame_172_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_172_delay-0.06s.gif
+
+#begin Copy of frame_173_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_173_delay-0.06s.gif
+
+#begin Copy of frame_174_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_174_delay-0.06s.gif
+
+#begin Copy of frame_175_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_175_delay-0.06s.gif
+
+#begin Copy of frame_176_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_176_delay-0.06s.gif
+
+#begin Copy of frame_177_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_177_delay-0.06s.gif
+
+#begin Copy of frame_178_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_178_delay-0.06s.gif
+
+#begin Copy of frame_179_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_179_delay-0.06s.gif
+
+#begin Copy of frame_18_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_18_delay-0.06s.gif
+
 #begin Copy of frame_18_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -307,6 +1447,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_18_delay-0.07s.gif
+
+#begin Copy of frame_19_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_19_delay-0.06s.gif
 
 #begin Copy of frame_19_delay-0.07s.gif
 /importer:TextureImporter
@@ -320,6 +1472,30 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_19_delay-0.07s.gif
 
+#begin Copy of frame_2_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_2_delay-0.06s.gif
+
+#begin Copy of frame_20_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_20_delay-0.06s.gif
+
 #begin Copy of frame_20_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -331,6 +1507,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_20_delay-0.07s.gif
+
+#begin Copy of frame_21_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_21_delay-0.06s.gif
 
 #begin Copy of frame_21_delay-0.07s.gif
 /importer:TextureImporter
@@ -344,6 +1532,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_21_delay-0.07s.gif
 
+#begin Copy of frame_22_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_22_delay-0.06s.gif
+
 #begin Copy of frame_22_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -355,6 +1555,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_22_delay-0.07s.gif
+
+#begin Copy of frame_23_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_23_delay-0.06s.gif
 
 #begin Copy of frame_23_delay-0.07s.gif
 /importer:TextureImporter
@@ -368,6 +1580,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_23_delay-0.07s.gif
 
+#begin Copy of frame_24_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_24_delay-0.06s.gif
+
 #begin Copy of frame_24_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -379,6 +1603,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_24_delay-0.07s.gif
+
+#begin Copy of frame_25_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_25_delay-0.06s.gif
 
 #begin Copy of frame_25_delay-0.07s.gif
 /importer:TextureImporter
@@ -392,6 +1628,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_25_delay-0.07s.gif
 
+#begin Copy of frame_26_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_26_delay-0.06s.gif
+
 #begin Copy of frame_26_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -403,6 +1651,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_26_delay-0.07s.gif
+
+#begin Copy of frame_27_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_27_delay-0.06s.gif
 
 #begin Copy of frame_27_delay-0.07s.gif
 /importer:TextureImporter
@@ -416,6 +1676,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_27_delay-0.07s.gif
 
+#begin Copy of frame_28_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_28_delay-0.06s.gif
+
 #begin Copy of frame_28_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -427,6 +1699,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_28_delay-0.07s.gif
+
+#begin Copy of frame_29_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_29_delay-0.06s.gif
 
 #begin Copy of frame_29_delay-0.07s.gif
 /importer:TextureImporter
@@ -440,6 +1724,30 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_29_delay-0.07s.gif
 
+#begin Copy of frame_3_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_3_delay-0.06s.gif
+
+#begin Copy of frame_30_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_30_delay-0.06s.gif
+
 #begin Copy of frame_30_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -451,6 +1759,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_30_delay-0.07s.gif
+
+#begin Copy of frame_31_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_31_delay-0.06s.gif
 
 #begin Copy of frame_31_delay-0.07s.gif
 /importer:TextureImporter
@@ -464,6 +1784,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_31_delay-0.07s.gif
 
+#begin Copy of frame_32_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_32_delay-0.06s.gif
+
 #begin Copy of frame_32_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -475,6 +1807,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_32_delay-0.07s.gif
+
+#begin Copy of frame_33_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_33_delay-0.06s.gif
 
 #begin Copy of frame_33_delay-0.07s.gif
 /importer:TextureImporter
@@ -488,6 +1832,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_33_delay-0.07s.gif
 
+#begin Copy of frame_34_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_34_delay-0.06s.gif
+
 #begin Copy of frame_34_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -499,6 +1855,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_34_delay-0.07s.gif
+
+#begin Copy of frame_35_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_35_delay-0.06s.gif
 
 #begin Copy of frame_35_delay-0.07s.gif
 /importer:TextureImporter
@@ -512,6 +1880,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_35_delay-0.07s.gif
 
+#begin Copy of frame_36_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_36_delay-0.06s.gif
+
 #begin Copy of frame_36_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -523,6 +1903,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_36_delay-0.07s.gif
+
+#begin Copy of frame_37_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_37_delay-0.06s.gif
 
 #begin Copy of frame_37_delay-0.07s.gif
 /importer:TextureImporter
@@ -536,6 +1928,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_37_delay-0.07s.gif
 
+#begin Copy of frame_38_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_38_delay-0.06s.gif
+
 #begin Copy of frame_38_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -547,6 +1951,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_38_delay-0.07s.gif
+
+#begin Copy of frame_39_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_39_delay-0.06s.gif
 
 #begin Copy of frame_39_delay-0.07s.gif
 /importer:TextureImporter
@@ -560,6 +1976,30 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_39_delay-0.07s.gif
 
+#begin Copy of frame_4_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_4_delay-0.06s.gif
+
+#begin Copy of frame_40_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_40_delay-0.06s.gif
+
 #begin Copy of frame_40_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -571,6 +2011,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_40_delay-0.07s.gif
+
+#begin Copy of frame_41_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_41_delay-0.06s.gif
 
 #begin Copy of frame_41_delay-0.07s.gif
 /importer:TextureImporter
@@ -584,6 +2036,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_41_delay-0.07s.gif
 
+#begin Copy of frame_42_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_42_delay-0.06s.gif
+
 #begin Copy of frame_42_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -595,6 +2059,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_42_delay-0.07s.gif
+
+#begin Copy of frame_43_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_43_delay-0.06s.gif
 
 #begin Copy of frame_43_delay-0.07s.gif
 /importer:TextureImporter
@@ -608,6 +2084,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_43_delay-0.07s.gif
 
+#begin Copy of frame_44_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_44_delay-0.06s.gif
+
 #begin Copy of frame_44_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -619,6 +2107,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_44_delay-0.07s.gif
+
+#begin Copy of frame_45_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_45_delay-0.06s.gif
 
 #begin Copy of frame_45_delay-0.07s.gif
 /importer:TextureImporter
@@ -632,6 +2132,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_45_delay-0.07s.gif
 
+#begin Copy of frame_46_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_46_delay-0.06s.gif
+
 #begin Copy of frame_46_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -643,6 +2155,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_46_delay-0.07s.gif
+
+#begin Copy of frame_47_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_47_delay-0.06s.gif
 
 #begin Copy of frame_47_delay-0.07s.gif
 /importer:TextureImporter
@@ -656,6 +2180,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_47_delay-0.07s.gif
 
+#begin Copy of frame_48_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_48_delay-0.06s.gif
+
 #begin Copy of frame_48_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -667,6 +2203,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_48_delay-0.07s.gif
+
+#begin Copy of frame_49_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_49_delay-0.06s.gif
 
 #begin Copy of frame_49_delay-0.07s.gif
 /importer:TextureImporter
@@ -680,6 +2228,30 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_49_delay-0.07s.gif
 
+#begin Copy of frame_5_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_5_delay-0.06s.gif
+
+#begin Copy of frame_50_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_50_delay-0.06s.gif
+
 #begin Copy of frame_50_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -691,6 +2263,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_50_delay-0.07s.gif
+
+#begin Copy of frame_51_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_51_delay-0.06s.gif
 
 #begin Copy of frame_51_delay-0.07s.gif
 /importer:TextureImporter
@@ -704,6 +2288,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_51_delay-0.07s.gif
 
+#begin Copy of frame_52_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_52_delay-0.06s.gif
+
 #begin Copy of frame_52_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -715,6 +2311,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_52_delay-0.07s.gif
+
+#begin Copy of frame_53_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_53_delay-0.06s.gif
 
 #begin Copy of frame_53_delay-0.07s.gif
 /importer:TextureImporter
@@ -728,6 +2336,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_53_delay-0.07s.gif
 
+#begin Copy of frame_54_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_54_delay-0.06s.gif
+
 #begin Copy of frame_54_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -739,6 +2359,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_54_delay-0.07s.gif
+
+#begin Copy of frame_55_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_55_delay-0.06s.gif
 
 #begin Copy of frame_55_delay-0.07s.gif
 /importer:TextureImporter
@@ -752,6 +2384,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_55_delay-0.07s.gif
 
+#begin Copy of frame_56_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_56_delay-0.06s.gif
+
 #begin Copy of frame_56_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -763,6 +2407,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_56_delay-0.07s.gif
+
+#begin Copy of frame_57_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_57_delay-0.06s.gif
 
 #begin Copy of frame_57_delay-0.07s.gif
 /importer:TextureImporter
@@ -776,6 +2432,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_57_delay-0.07s.gif
 
+#begin Copy of frame_58_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_58_delay-0.06s.gif
+
 #begin Copy of frame_58_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -787,6 +2455,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_58_delay-0.07s.gif
+
+#begin Copy of frame_59_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_59_delay-0.06s.gif
 
 #begin Copy of frame_59_delay-0.07s.gif
 /importer:TextureImporter
@@ -800,6 +2480,30 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_59_delay-0.07s.gif
 
+#begin Copy of frame_6_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_6_delay-0.06s.gif
+
+#begin Copy of frame_60_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_60_delay-0.06s.gif
+
 #begin Copy of frame_60_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -811,6 +2515,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_60_delay-0.07s.gif
+
+#begin Copy of frame_61_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_61_delay-0.06s.gif
 
 #begin Copy of frame_61_delay-0.07s.gif
 /importer:TextureImporter
@@ -824,6 +2540,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_61_delay-0.07s.gif
 
+#begin Copy of frame_62_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_62_delay-0.06s.gif
+
 #begin Copy of frame_62_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -835,6 +2563,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_62_delay-0.07s.gif
+
+#begin Copy of frame_63_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_63_delay-0.06s.gif
 
 #begin Copy of frame_63_delay-0.07s.gif
 /importer:TextureImporter
@@ -848,6 +2588,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_63_delay-0.07s.gif
 
+#begin Copy of frame_64_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_64_delay-0.06s.gif
+
 #begin Copy of frame_64_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -859,6 +2611,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_64_delay-0.07s.gif
+
+#begin Copy of frame_65_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_65_delay-0.06s.gif
 
 #begin Copy of frame_65_delay-0.07s.gif
 /importer:TextureImporter
@@ -872,6 +2636,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_65_delay-0.07s.gif
 
+#begin Copy of frame_66_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_66_delay-0.06s.gif
+
 #begin Copy of frame_66_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -883,6 +2659,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_66_delay-0.07s.gif
+
+#begin Copy of frame_67_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_67_delay-0.06s.gif
 
 #begin Copy of frame_67_delay-0.07s.gif
 /importer:TextureImporter
@@ -896,6 +2684,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_67_delay-0.07s.gif
 
+#begin Copy of frame_68_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_68_delay-0.06s.gif
+
 #begin Copy of frame_68_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -907,6 +2707,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_68_delay-0.07s.gif
+
+#begin Copy of frame_69_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_69_delay-0.06s.gif
 
 #begin Copy of frame_69_delay-0.07s.gif
 /importer:TextureImporter
@@ -920,6 +2732,30 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_69_delay-0.07s.gif
 
+#begin Copy of frame_7_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_7_delay-0.06s.gif
+
+#begin Copy of frame_70_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_70_delay-0.06s.gif
+
 #begin Copy of frame_70_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -931,6 +2767,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_70_delay-0.07s.gif
+
+#begin Copy of frame_71_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_71_delay-0.06s.gif
 
 #begin Copy of frame_71_delay-0.07s.gif
 /importer:TextureImporter
@@ -944,6 +2792,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_71_delay-0.07s.gif
 
+#begin Copy of frame_72_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_72_delay-0.06s.gif
+
 #begin Copy of frame_72_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -955,6 +2815,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_72_delay-0.07s.gif
+
+#begin Copy of frame_73_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_73_delay-0.06s.gif
 
 #begin Copy of frame_73_delay-0.07s.gif
 /importer:TextureImporter
@@ -968,6 +2840,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_73_delay-0.07s.gif
 
+#begin Copy of frame_74_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_74_delay-0.06s.gif
+
 #begin Copy of frame_74_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -979,6 +2863,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_74_delay-0.07s.gif
+
+#begin Copy of frame_75_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_75_delay-0.06s.gif
 
 #begin Copy of frame_75_delay-0.07s.gif
 /importer:TextureImporter
@@ -992,6 +2888,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_75_delay-0.07s.gif
 
+#begin Copy of frame_76_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_76_delay-0.06s.gif
+
 #begin Copy of frame_76_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1004,6 +2912,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_76_delay-0.07s.gif
 
+#begin Copy of frame_77_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_77_delay-0.06s.gif
+
 #begin Copy of frame_77_delay-0.07s.gif
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1015,6 +2935,294 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Copy of frame_77_delay-0.07s.gif
+
+#begin Copy of frame_78_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_78_delay-0.06s.gif
+
+#begin Copy of frame_79_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_79_delay-0.06s.gif
+
+#begin Copy of frame_8_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_8_delay-0.06s.gif
+
+#begin Copy of frame_80_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_80_delay-0.06s.gif
+
+#begin Copy of frame_81_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_81_delay-0.06s.gif
+
+#begin Copy of frame_82_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_82_delay-0.06s.gif
+
+#begin Copy of frame_83_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_83_delay-0.06s.gif
+
+#begin Copy of frame_84_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_84_delay-0.06s.gif
+
+#begin Copy of frame_85_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_85_delay-0.06s.gif
+
+#begin Copy of frame_86_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_86_delay-0.06s.gif
+
+#begin Copy of frame_87_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_87_delay-0.06s.gif
+
+#begin Copy of frame_88_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_88_delay-0.06s.gif
+
+#begin Copy of frame_89_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_89_delay-0.06s.gif
+
+#begin Copy of frame_9_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_9_delay-0.06s.gif
+
+#begin Copy of frame_90_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_90_delay-0.06s.gif
+
+#begin Copy of frame_91_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_91_delay-0.06s.gif
+
+#begin Copy of frame_92_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_92_delay-0.06s.gif
+
+#begin Copy of frame_93_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_93_delay-0.06s.gif
+
+#begin Copy of frame_94_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_94_delay-0.06s.gif
+
+#begin Copy of frame_95_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_95_delay-0.06s.gif
+
+#begin Copy of frame_96_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_96_delay-0.06s.gif
+
+#begin Copy of frame_97_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_97_delay-0.06s.gif
+
+#begin Copy of frame_98_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_98_delay-0.06s.gif
+
+#begin Copy of frame_99_delay-0.06s.gif
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Copy of frame_99_delay-0.06s.gif
 
 #begin EnemyPlane.png
 /importer:TextureImporter
