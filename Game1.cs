@@ -15,12 +15,14 @@ namespace Dogfighter
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-        Texture2D planeTexture, shotTexture, ammoTexture, missleTexture, enemyPlaneTexture, coinTexture;
+        Texture2D planeTexture, shotTexture, ammoTexture, missleTexture, enemyPlaneTexture, coinTexture, plane2Texture, plane3Texture, plane4Texture;
         List<Texture2D> achievementButton = new List<Texture2D>();
         List<Texture2D> storeButton = new List<Texture2D>();
         List<Texture2D> playButton = new List<Texture2D>();
         List<Texture2D> h2pButton = new List<Texture2D>();
         List<Texture2D> bgFrames = new List<Texture2D>();
+        Texture2D speedTexture, rateTexture, amountTexture, rectangleTexture, UITexture;
+        List<bool> whatTexture;
         MouseState mouseState, previousMousestate;
         private Texture2D circleTexture;
         KeyboardState keyboardState, previousState;
@@ -32,7 +34,7 @@ namespace Dogfighter
         List<EnemyPlane> enemyPlanes;
         Random generator = new Random();
         Plane plane;
-        SpriteFont ammoamount;
+        SpriteFont ammoamount, pressSpace, priceFont, icerbergFont;
         int ammorate, enemyrate, superammoRate, startAmmo, startSuper, kills;
         private FrameCounter frameCounter = new FrameCounter();
         float planeSpeed, enemySpeed, enemyFiringRate, enemyShotSpeed;
@@ -40,7 +42,10 @@ namespace Dogfighter
         float startTime;
         bool planeAnimation;
         int store, play, h2p, achievments;
+        List<string> speedUpgrades, amountUpgrades, rateUpgrades;
         Rectangle storeRect, playRect, h2pRect, achievmentsRect;
+        Rectangle plane2, plane3, plane4;
+        Rectangle speedRect, amountRect, rateRect;
         Point mouseLocation;
         enum Screen
         {
@@ -63,23 +68,31 @@ namespace Dogfighter
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            whatTexture = new List<bool>();
             base.Initialize();
             screen = Screen.Start;
-            planeSpeed = 3; enemySpeed = 2; enemyFiringRate = 10; enemyShotSpeed = 4f; startAmmo=1; startSuper = 0;
+            planeSpeed = 3; enemySpeed = 2; enemyFiringRate =5; enemyShotSpeed = 4f; startAmmo=1; startSuper = 0;
             plane = new Plane(planeTexture, planeSpeed, circleTexture, startAmmo, startSuper);
             shots = new List<Shot>(); supershots = new List<Shot>();
             ammolist = new List<Ammo>();
             enemyPlanes = new List<EnemyPlane>();
-            ammorate = 10; enemyrate = 12; superammoRate = 30;
+            speedUpgrades = new List<String>(); amountUpgrades = new List<String>(); rateUpgrades = new List<String>();
+            ammorate = 10; enemyrate = 10; superammoRate = 30;
             planeAnimation = false;
             store=0; play = 0; h2p = 0; achievments = 0;
+            coins = 0;
+            plane2 = new Rectangle(200, 310, 120, 60); plane3 = new Rectangle(360, 310, 120, 60); plane4 = new Rectangle(520, 310, 120, 60);
             storeRect = new Rectangle(630, 400, 150, 30); playRect = new Rectangle(430, 400, 150, 30); h2pRect = new Rectangle(230, 400, 150, 30); achievmentsRect = new Rectangle(30, 400, 150, 30);
+            speedRect = new Rectangle(6, 97, 256, 171); amountRect = new Rectangle(272, 97, 256, 171); rateRect = new Rectangle(538, 97, 256, 171);
         }
 
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             planeTexture = Content.Load<Texture2D>("airplane");
+            plane2Texture = Content.Load<Texture2D>("airplane2");
+            plane3Texture = Content.Load<Texture2D>("airplane3");
+            plane4Texture = Content.Load<Texture2D>("airplane4");
             enemyPlaneTexture = Content.Load<Texture2D>("EnemyPlane");
             circleTexture = Content.Load<Texture2D>("circle");
             shotTexture = Content.Load<Texture2D>("LaserShotRed");
@@ -95,6 +108,18 @@ namespace Dogfighter
             h2pButton.Add(Content.Load<Texture2D>("H2P"));
             h2pButton.Add(Content.Load<Texture2D>("H2PHover"));
             coinTexture = Content.Load<Texture2D>("AACoin");
+            pressSpace = Content.Load<SpriteFont>("PressSpace");
+            speedTexture = Content.Load<Texture2D>("SpeedUpgrade");
+            amountTexture = Content.Load<Texture2D>("scrnli_1_17_2024_10-02-11_AM-removebg-preview");
+            rateTexture = Content.Load<Texture2D>("AmmoRateUpgrade");
+            rectangleTexture = Content.Load<Texture2D>("RectangleTexture");
+            priceFont = Content.Load<SpriteFont>("PriceFont");
+            UITexture = Content.Load<Texture2D>("GameScreenUI");
+            icerbergFont = Content.Load<SpriteFont>("IcebergFont");
+            for (int i=0; i<6; i++)
+            {
+                whatTexture.Add(false);
+            }
             for (int i = 0; i < 77; i++)
             {
                 if (i < 10)
@@ -153,7 +178,7 @@ namespace Dogfighter
                     plane._speed = planeSpeed;
                     gameseconds = 0;
                 }
-                else if ((playRect.Contains(mouseLocation)))
+                else if (playRect.Contains(mouseLocation))
                 {
                     play = 1;
                 }
@@ -200,6 +225,22 @@ namespace Dogfighter
                             plane._dead = false;
                             screen = Screen.Play;
                             startTime = (float)gameTime.TotalGameTime.TotalSeconds;
+                            if (whatTexture[3]==false && whatTexture[4]==false && whatTexture[5] == false)
+                            {
+                                plane._texture = planeTexture;
+                            }
+                            else if (whatTexture[3] == true)
+                            {
+                                plane._texture = plane2Texture;
+                            }
+                            else if (whatTexture[4] == true)
+                            {
+                                plane._texture = plane3Texture;
+                            }
+                            else
+                            {
+                                plane._texture = plane4Texture;
+                            }
                         }
                     }
                 }
@@ -269,7 +310,7 @@ namespace Dogfighter
                     }
                 }
                 Spawn(gameTime);
-                if (generator.Next(901) == 0)
+                if (generator.Next(1201) == 0)
                 {
                     DifficultyIncrease();
                 }
@@ -289,9 +330,113 @@ namespace Dogfighter
             else if (screen == Screen.Shop)
             {
                 keyboardState = Keyboard.GetState();
+                previousMousestate = mouseState;
+                mouseState = Mouse.GetState();
+                mouseLocation = new Point(mouseState.X, mouseState.Y);
                 if (keyboardState.IsKeyDown(Keys.Space))
                 {
                     screen = Screen.Start;
+                }
+                if (plane2.Contains(mouseLocation) && mouseState.LeftButton == ButtonState.Pressed && previousMousestate.LeftButton == ButtonState.Released && (coins>=100 || whatTexture[0]==true))
+                {
+                    if (whatTexture[0]== false)
+                    {
+                        coins -= 100;
+                        whatTexture[0] = true;
+                        whatTexture[3] = true;
+                        whatTexture[4] = false;
+                        whatTexture[5] = false;
+                    }
+                    else
+                    {
+                        if (whatTexture[3] == true)
+                        {
+                            whatTexture[3] = false;
+                        }
+                        else
+                        {
+                            whatTexture[3] = true;
+                            whatTexture[4] = false;
+                            whatTexture[5] = false;
+                        }
+                    }
+                }
+                if (plane3.Contains(mouseLocation) && mouseState.LeftButton == ButtonState.Pressed && previousMousestate.LeftButton == ButtonState.Released && (coins >= 200 || whatTexture[1] == true))
+                {
+                    if (whatTexture[1] == false)
+                    {
+                        coins -= 200;
+                        whatTexture[1] = true;
+                        whatTexture[4] = true;
+                        whatTexture[3] = false;
+                        whatTexture[5] = false;
+                    }
+                    else
+                    {
+                        if (whatTexture[4] == true)
+                        {
+                            whatTexture[4] = false;
+                        }
+                        else
+                        {
+                            whatTexture[4] = true;
+                            whatTexture[5] = false;
+                            whatTexture[3] = false;
+                        }
+                    }
+                }
+                if (plane4.Contains(mouseLocation) && mouseState.LeftButton == ButtonState.Pressed && previousMousestate.LeftButton == ButtonState.Released && (coins >= 300 || whatTexture[2] == true))
+                {
+                    if (whatTexture[2] == false)
+                    {
+                        coins -= 300;
+                        whatTexture[2] = true;
+                        whatTexture[5] = true;
+                        whatTexture[4] = false;
+                        whatTexture[3] = false;
+                    }
+                    else
+                    {
+                        if (whatTexture[5] == true)
+                        {
+                            whatTexture[5] = false;
+                        }
+                        else
+                        {
+                            whatTexture[5] = true;
+                            whatTexture[4] = false;
+                            whatTexture[3] = false;
+                        }
+                    }
+                }
+                if (speedRect.Contains(mouseLocation) && mouseState.LeftButton == ButtonState.Pressed && previousMousestate.LeftButton == ButtonState.Released && coins >= (speedUpgrades.Count+1)*10)
+                {
+                    coins-= (speedUpgrades.Count+1)*10;
+                    speedUpgrades.Add("Upgraded");
+                    planeSpeed++;
+                }
+                if (amountRect.Contains(mouseLocation) && mouseState.LeftButton == ButtonState.Pressed && previousMousestate.LeftButton == ButtonState.Released && coins >= (amountUpgrades.Count + 1) * 10)
+                {
+                    coins -= (amountUpgrades.Count + 1) * 10;
+                    amountUpgrades.Add("Upgraded");
+                    startAmmo++;
+                    if(generator.Next(4)==0)
+                    {
+                        startSuper++;
+                    }
+                }
+                if (rateRect.Contains(mouseLocation) && mouseState.LeftButton == ButtonState.Pressed && previousMousestate.LeftButton == ButtonState.Released && coins >= (rateUpgrades.Count + 1) * 10)
+                {
+                    coins -= (rateUpgrades.Count + 1) * 10;
+                    rateUpgrades.Add("Upgraded");
+                    if (ammorate > 1)
+                    {
+                        ammorate -= 1;
+                    }
+                    if (superammoRate > 1)
+                    {
+                        superammoRate-= 1;
+                    }
                 }
             }
             else if (screen == Screen.Achievements)
@@ -341,6 +486,14 @@ namespace Dogfighter
             {
                 _spriteBatch.Begin();
                 _spriteBatch.Draw(bgFrames[bgFrame], new Rectangle(0, 0, _graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight), Color.White);
+                _spriteBatch.Draw(UITexture, new Rectangle(_graphics.PreferredBackBufferWidth - 250, _graphics.PreferredBackBufferHeight - 150, 250, 150), Color.White);
+                _spriteBatch.Draw(logoFrames[logoFrames.Count-1], new Rectangle(596, 355, 160, 110), Color.White * 0.5f);
+                _spriteBatch.DrawString(icerbergFont, "Kills: " + kills, new Vector2(590, 364), Color.White);
+                _spriteBatch.DrawString(icerbergFont, "Time: " + Math.Round(gameseconds), new Vector2(589, 410), Color.White);
+                _spriteBatch.Draw(ammoTexture, new Rectangle(687, 373, 45, 15), Color.Red);
+                _spriteBatch.DrawString(icerbergFont, ": " + plane._ammo, new Vector2(740, 362), Color.White);
+                _spriteBatch.Draw(ammoTexture, new Rectangle(687, 419, 45, 15), Color.White);
+                _spriteBatch.DrawString(icerbergFont, ": " + plane._superammo, new Vector2(740, 408), Color.White);
                 foreach (EnemyPlane enemyPlane in enemyPlanes)
                 {
                     enemyPlane.Draw(_spriteBatch);
@@ -358,10 +511,6 @@ namespace Dogfighter
                 {
                     ammo.Draw(_spriteBatch);
                 }
-                _spriteBatch.DrawString(ammoamount, "Ammo: " + plane._ammo, new Vector2(725, 10), Color.White);
-                _spriteBatch.DrawString(ammoamount, "Super Ammo: " + plane._superammo, new Vector2(679, 30), Color.White);
-                _spriteBatch.DrawString(ammoamount, "Kills: " + kills, new Vector2(742, 50), Color.White);
-                _spriteBatch.DrawString(ammoamount, "Seconds: " + Math.Round(gameseconds), new Vector2(708, 70), Color.White);
                 _spriteBatch.End();
             }
             else if (screen == Screen.Shop)
@@ -370,18 +519,72 @@ namespace Dogfighter
                 _spriteBatch.Draw(planeFrames[0], new Rectangle(0, 0, _graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight), Color.LightBlue);
                 _spriteBatch.Draw(coinTexture, new Rectangle(10, 10, 45, 45), Color.White);
                 _spriteBatch.DrawString(ammoamount, "X " + coins, new Vector2(60, 25), Color.White);
+                if (whatTexture[3] == false)
+                {
+                    _spriteBatch.Draw(plane2Texture, plane2, Color.White);
+                }
+                else
+                {
+                    _spriteBatch.Draw(plane2Texture, plane2, Color.LightBlue);
+                }
+                if (whatTexture[0] == false)
+                {
+                    _spriteBatch.Draw(coinTexture, new Rectangle(220, 370, 20, 20), Color.White);
+                    _spriteBatch.DrawString(ammoamount, "X 100", new Vector2(242, 372), Color.White);
+                }
+                if (whatTexture[4]  == false)
+                {
+                    _spriteBatch.Draw(plane3Texture, plane3, Color.White);
+                }
+                else
+                {
+                    _spriteBatch.Draw(plane3Texture, plane3, Color.LightBlue);
+                }
+                if (whatTexture[1] == false)
+                {
+                    _spriteBatch.Draw(coinTexture, new Rectangle(380, 370, 20, 20), Color.White);
+                    _spriteBatch.DrawString(ammoamount, "X 200", new Vector2(402, 372), Color.White);
+                }
+                if (whatTexture[5] == false)
+                {
+                    _spriteBatch.Draw(plane4Texture, plane4, Color.White);
+                }
+                else
+                {
+                    _spriteBatch.Draw(plane4Texture, plane4, Color.LightBlue);
+                }
+                if (whatTexture[2] == false)
+                {
+                    _spriteBatch.Draw(coinTexture, new Rectangle(540, 370, 20, 20), Color.White);
+                    _spriteBatch.DrawString(ammoamount, "X 300", new Vector2(562, 372), Color.White);
+                }
+                _spriteBatch.Draw(rectangleTexture, speedRect, Color.Orange);
+                _spriteBatch.Draw(speedTexture, new Rectangle(9, 100, 250, 125), Color.White);
+                _spriteBatch.Draw(coinTexture, new Rectangle(89, 230, 25, 25), Color.White);
+                _spriteBatch.DrawString(priceFont, "X " + (speedUpgrades.Count+1)*10, new Vector2(124, 230), Color.Black);
+                _spriteBatch.Draw(rectangleTexture, amountRect, Color.LightBlue);
+                _spriteBatch.Draw(amountTexture, new Rectangle(275, 100, 250, 125), Color.White);
+                _spriteBatch.Draw(coinTexture, new Rectangle(355, 230, 25, 25), Color.White);
+                _spriteBatch.DrawString(priceFont, "X " + (amountUpgrades.Count + 1) * 10, new Vector2(390, 230), Color.Black);
+                _spriteBatch.Draw(rectangleTexture, rateRect, Color.Magenta);
+                _spriteBatch.Draw(rateTexture, new Rectangle(541, 100, 250, 125), Color.White);
+                _spriteBatch.Draw(coinTexture, new Rectangle(621, 230, 25, 25), Color.White);
+                _spriteBatch.DrawString(priceFont, "X " + (rateUpgrades.Count + 1) * 10, new Vector2(656, 230), Color.Black);
+                _spriteBatch.DrawString(pressSpace, "PRESS SPACE TO RETURN", new Vector2(180, 400), Color.White);
                 _spriteBatch.End();
             }
             else if (screen == Screen.Achievements)
             {
                 _spriteBatch.Begin();
                 _spriteBatch.Draw(planeFrames[0], new Rectangle(0, 0, _graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight), Color.LightBlue);
+                _spriteBatch.DrawString(pressSpace, "PRESS SPACE TO RETURN", new Vector2(180, 400), Color.White);
                 _spriteBatch.End();
             }
             else if (screen == Screen.H2P)
             {
                 _spriteBatch.Begin();
                 _spriteBatch.Draw(planeFrames[0], new Rectangle(0, 0, _graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight), Color.LightBlue);
+                _spriteBatch.DrawString(pressSpace, "PRESS SPACE TO RETURN", new Vector2(180, 400), Color.White);
                 _spriteBatch.End();
             }
             base.Draw(gameTime);
@@ -411,7 +614,10 @@ namespace Dogfighter
 
         private void DifficultyIncrease()
         {
-            enemySpeed++;
+            if (generator.Next(1) == 0)
+            {
+                enemySpeed++;
+            }
             enemyShotSpeed++;
             if (enemyFiringRate > 1)
             {

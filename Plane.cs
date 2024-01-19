@@ -12,7 +12,7 @@ namespace Dogfighter
 {
     internal class Plane
     {
-        private Texture2D _texture;
+        public Texture2D _texture;
         private Texture2D _circleTexture;
         private Rectangle _rectangle, _circleHitbox;
         private Vector2 _location, _origin, _destination, _movement;

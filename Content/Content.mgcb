@@ -116,6 +116,18 @@
 /processorParam:TextureFormat=Compressed
 /build:AmmoAmount.spritefont
 
+#begin AmmoRateUpgrade.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:AmmoRateUpgrade.png
+
 #begin circle.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -3428,6 +3440,18 @@
 /processorParam:TextureFormat=Color
 /build:frame_9_delay-0.08s.gif
 
+#begin GameScreenUI.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:GameScreenUI.png
+
 #begin H2P.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -3451,6 +3475,16 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:H2PHover.png
+
+#begin Iceberg-Regular.ttf
+/copy:Iceberg-Regular.ttf
+
+#begin IcebergFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:IcebergFont.spritefont
 
 #begin LaserShotRed.png
 /importer:TextureImporter
@@ -3499,6 +3533,56 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:PlayNowHover.png
+
+#begin PressSpace.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:PressSpace.spritefont
+
+#begin PriceFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:PriceFont.spritefont
+
+#begin RectangleTexture.jpg
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:RectangleTexture.jpg
+
+#begin scrnli_1_17_2024_10-02-11_AM-removebg-preview.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:scrnli_1_17_2024_10-02-11_AM-removebg-preview.png
+
+#begin SpeedUpgrade.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:SpeedUpgrade.png
 
 #begin Store.png
 /importer:TextureImporter
