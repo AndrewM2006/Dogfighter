@@ -532,7 +532,7 @@ namespace Dogfighter
                 _spriteBatch.DrawString(icerbergFont, ": " + plane._ammo, new Vector2(740, 362), Color.White);
                 _spriteBatch.Draw(ammoTexture, new Rectangle(687, 419, 45, 15), Color.White);
                 _spriteBatch.DrawString(icerbergFont, ": " + plane._superammo, new Vector2(740, 408), Color.White);
-                _spriteBatch.Draw(scopeTexture, new Rectangle((int)mousesPoint.X - 5, (int)mousesPoint.Y - 5, 20, 20), Color.White);
+                _spriteBatch.Draw(scopeTexture, new Rectangle((int)mousesPoint.X - 5, (int)mousesPoint.Y - 5, 25, 25), Color.White);
                 foreach (EnemyPlane enemyPlane in enemyPlanes)
                 {
                     enemyPlane.Draw(_spriteBatch);
