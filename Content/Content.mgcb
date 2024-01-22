@@ -3236,6 +3236,18 @@
 /processorParam:TextureFormat=Color
 /build:Copy of frame_99_delay-0.06s.gif
 
+#begin credit_card.jpg
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:credit_card.jpg
+
 #begin EnemyPlane.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -3559,6 +3571,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:RectangleTexture.jpg
+
+#begin Scope.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Scope.png
 
 #begin scrnli_1_17_2024_10-02-11_AM-removebg-preview.png
 /importer:TextureImporter

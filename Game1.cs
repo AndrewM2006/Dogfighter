@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
@@ -21,8 +22,9 @@ namespace Dogfighter
         List<Texture2D> playButton = new List<Texture2D>();
         List<Texture2D> h2pButton = new List<Texture2D>();
         List<Texture2D> bgFrames = new List<Texture2D>();
-        Texture2D speedTexture, rateTexture, amountTexture, rectangleTexture, UITexture;
+        Texture2D speedTexture, rateTexture, amountTexture, rectangleTexture, UITexture, creditcardTexture, scopeTexture;
         List<bool> whatTexture;
+        Vector2 mousesPoint;
         MouseState mouseState, previousMousestate;
         private Texture2D circleTexture;
         KeyboardState keyboardState, previousState;
@@ -40,13 +42,14 @@ namespace Dogfighter
         float planeSpeed, enemySpeed, enemyFiringRate, enemyShotSpeed;
         float seconds, coins, gameseconds;
         float startTime;
-        bool planeAnimation;
+        bool planeAnimation, creditcard;
         int store, play, h2p, achievments;
         List<string> speedUpgrades, amountUpgrades, rateUpgrades;
         Rectangle storeRect, playRect, h2pRect, achievmentsRect;
         Rectangle plane2, plane3, plane4;
-        Rectangle speedRect, amountRect, rateRect;
+        Rectangle speedRect, amountRect, rateRect, coinsRect;
         Point mouseLocation;
+        string creditcardnum;
         enum Screen
         {
             Start,
@@ -80,10 +83,12 @@ namespace Dogfighter
             ammorate = 10; enemyrate = 10; superammoRate = 30;
             planeAnimation = false;
             store=0; play = 0; h2p = 0; achievments = 0;
-            coins = 0;
+            coins = 0; creditcard = false;
+            creditcardnum = "";
             plane2 = new Rectangle(200, 310, 120, 60); plane3 = new Rectangle(360, 310, 120, 60); plane4 = new Rectangle(520, 310, 120, 60);
             storeRect = new Rectangle(630, 400, 150, 30); playRect = new Rectangle(430, 400, 150, 30); h2pRect = new Rectangle(230, 400, 150, 30); achievmentsRect = new Rectangle(30, 400, 150, 30);
             speedRect = new Rectangle(6, 97, 256, 171); amountRect = new Rectangle(272, 97, 256, 171); rateRect = new Rectangle(538, 97, 256, 171);
+            coinsRect = new Rectangle(520, 10, 200, 50);
         }
 
         protected override void LoadContent()
@@ -116,6 +121,8 @@ namespace Dogfighter
             priceFont = Content.Load<SpriteFont>("PriceFont");
             UITexture = Content.Load<Texture2D>("GameScreenUI");
             icerbergFont = Content.Load<SpriteFont>("IcebergFont");
+            creditcardTexture = Content.Load<Texture2D>("credit_card");
+            scopeTexture = Content.Load<Texture2D>("Scope");
             for (int i=0; i<6; i++)
             {
                 whatTexture.Add(false);
@@ -259,6 +266,7 @@ namespace Dogfighter
                 }
                 previousMousestate = mouseState;
                 mouseState = Mouse.GetState();
+                mousesPoint = new Vector2(mouseState.X, mouseState.Y);
                 previousState = keyboardState;
                 keyboardState = Keyboard.GetState();
                 ammolist = plane.AmmoCollide(ammolist);
@@ -329,6 +337,7 @@ namespace Dogfighter
             }
             else if (screen == Screen.Shop)
             {
+                previousState = keyboardState;
                 keyboardState = Keyboard.GetState();
                 previousMousestate = mouseState;
                 mouseState = Mouse.GetState();
@@ -438,6 +447,33 @@ namespace Dogfighter
                         superammoRate-= 1;
                     }
                 }
+                if (coinsRect.Contains(mouseLocation) && mouseState.LeftButton == ButtonState.Pressed)
+                {
+                    creditcard = true;
+                }
+                if (creditcard && keyboardState.IsKeyDown(Keys.Enter))
+                {
+                    creditcard = false;
+                    if (creditcardnum.Length == 14)
+                    {
+                        coins += 1000;
+                    }
+                    creditcardnum = "";
+                }
+                else if (creditcard && keyboardState.IsKeyDown(Keys.Back) && previousState.IsKeyUp(Keys.Back))
+                {
+                    if (creditcardnum.Length > 0)
+                    {
+                        creditcardnum = creditcardnum.Remove(creditcardnum.Length-1);
+                    }
+                }
+                else if (creditcard && (keyboardState.IsKeyDown(Keys.D1) && previousState.IsKeyUp(Keys.D1)) || (keyboardState.IsKeyDown(Keys.D2) && previousState.IsKeyUp(Keys.D2)) || (keyboardState.IsKeyDown(Keys.D3) && previousState.IsKeyUp(Keys.D3)) || (keyboardState.IsKeyDown(Keys.D4) && previousState.IsKeyUp(Keys.D4)) || (keyboardState.IsKeyDown(Keys.D5) && previousState.IsKeyUp(Keys.D5)) || (keyboardState.IsKeyDown(Keys.D6) && previousState.IsKeyUp(Keys.D6)) || (keyboardState.IsKeyDown(Keys.D7) && previousState.IsKeyUp(Keys.D7)) || (keyboardState.IsKeyDown(Keys.D8) && previousState.IsKeyUp(Keys.D8)) || (keyboardState.IsKeyDown(Keys.D9) && previousState.IsKeyUp(Keys.D9)) || (keyboardState.IsKeyDown(Keys.D0) && previousState.IsKeyUp(Keys.D0)))
+                {
+                    if (creditcardnum.Length < 14)
+                    {
+                        creditcardnum += "*";
+                    }
+                }
             }
             else if (screen == Screen.Achievements)
             {
@@ -469,6 +505,7 @@ namespace Dogfighter
                 _spriteBatch.Begin();
                 if (!planeAnimation)
                 {
+                    this.IsMouseVisible = true;
                     _spriteBatch.Draw(planeFrames[planeFrame], new Rectangle(0, 0, _graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight), Color.LightBlue);
                     _spriteBatch.Draw(logoFrames[logoFrame], new Rectangle(85, 14, 650, 383), Color.White);
                     _spriteBatch.Draw(achievementButton[achievments],achievmentsRect, Color.White);
@@ -485,6 +522,7 @@ namespace Dogfighter
             else if (screen == Screen.Play)
             {
                 _spriteBatch.Begin();
+                this.IsMouseVisible = false;
                 _spriteBatch.Draw(bgFrames[bgFrame], new Rectangle(0, 0, _graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight), Color.White);
                 _spriteBatch.Draw(UITexture, new Rectangle(_graphics.PreferredBackBufferWidth - 250, _graphics.PreferredBackBufferHeight - 150, 250, 150), Color.White);
                 _spriteBatch.Draw(logoFrames[logoFrames.Count-1], new Rectangle(596, 355, 160, 110), Color.White * 0.5f);
@@ -494,6 +532,7 @@ namespace Dogfighter
                 _spriteBatch.DrawString(icerbergFont, ": " + plane._ammo, new Vector2(740, 362), Color.White);
                 _spriteBatch.Draw(ammoTexture, new Rectangle(687, 419, 45, 15), Color.White);
                 _spriteBatch.DrawString(icerbergFont, ": " + plane._superammo, new Vector2(740, 408), Color.White);
+                _spriteBatch.Draw(scopeTexture, new Rectangle((int)mousesPoint.X - 5, (int)mousesPoint.Y - 5, 20, 20), Color.White);
                 foreach (EnemyPlane enemyPlane in enemyPlanes)
                 {
                     enemyPlane.Draw(_spriteBatch);
@@ -567,10 +606,21 @@ namespace Dogfighter
                 _spriteBatch.Draw(coinTexture, new Rectangle(355, 230, 25, 25), Color.White);
                 _spriteBatch.DrawString(priceFont, "X " + (amountUpgrades.Count + 1) * 10, new Vector2(390, 230), Color.Black);
                 _spriteBatch.Draw(rectangleTexture, rateRect, Color.Magenta);
-                _spriteBatch.Draw(rateTexture, new Rectangle(541, 100, 250, 125), Color.White);
+                _spriteBatch.Draw(rateTexture, new Rectangle(543, 100, 250, 125), Color.White);
                 _spriteBatch.Draw(coinTexture, new Rectangle(621, 230, 25, 25), Color.White);
                 _spriteBatch.DrawString(priceFont, "X " + (rateUpgrades.Count + 1) * 10, new Vector2(656, 230), Color.Black);
                 _spriteBatch.DrawString(pressSpace, "PRESS SPACE TO RETURN", new Vector2(180, 400), Color.White);
+                if (!creditcard)
+                {
+                    _spriteBatch.Draw(rectangleTexture, coinsRect, Color.Gold);
+                    _spriteBatch.DrawString(pressSpace, "BUY", new Vector2(545, 10), Color.Black);
+                    _spriteBatch.Draw(coinTexture, new Rectangle(643, 12, 45, 45), Color.White);
+                }
+                else
+                {
+                    _spriteBatch.Draw(creditcardTexture, coinsRect, Color.White);
+                    _spriteBatch.DrawString(ammoamount, creditcardnum, new Vector2(600, 46), Color.Black);
+                }
                 _spriteBatch.End();
             }
             else if (screen == Screen.Achievements)
