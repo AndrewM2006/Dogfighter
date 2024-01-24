@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualBasic;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
@@ -22,7 +23,8 @@ namespace Dogfighter
         List<Texture2D> playButton = new List<Texture2D>();
         List<Texture2D> h2pButton = new List<Texture2D>();
         List<Texture2D> bgFrames = new List<Texture2D>();
-        Texture2D speedTexture, rateTexture, amountTexture, rectangleTexture, UITexture, creditcardTexture, scopeTexture;
+        List <Achievements> achievements = new List<Achievements>();
+        Texture2D speedTexture, rateTexture, amountTexture, rectangleTexture, UITexture, creditcardTexture, scopeTexture, h2pScreenTexture;
         List<bool> whatTexture;
         Vector2 mousesPoint;
         MouseState mouseState, previousMousestate;
@@ -36,8 +38,8 @@ namespace Dogfighter
         List<EnemyPlane> enemyPlanes;
         Random generator = new Random();
         Plane plane;
-        SpriteFont ammoamount, pressSpace, priceFont, icerbergFont;
-        int ammorate, enemyrate, superammoRate, startAmmo, startSuper, kills;
+        SpriteFont ammoamount, pressSpace, priceFont, icerbergFont, achievementsFont;
+        int ammorate, enemyrate, superammoRate, startAmmo, startSuper, kills, totalKills, totalSecondsPlayed;
         private FrameCounter frameCounter = new FrameCounter();
         float planeSpeed, enemySpeed, enemyFiringRate, enemyShotSpeed;
         float seconds, coins, gameseconds;
@@ -50,6 +52,7 @@ namespace Dogfighter
         Rectangle speedRect, amountRect, rateRect, coinsRect;
         Point mouseLocation;
         string creditcardnum;
+        SoundEffectInstance musicInstance;
         enum Screen
         {
             Start,
@@ -85,10 +88,25 @@ namespace Dogfighter
             store=0; play = 0; h2p = 0; achievments = 0;
             coins = 0; creditcard = false;
             creditcardnum = "";
+            totalKills = 0; totalSecondsPlayed = 0;
             plane2 = new Rectangle(200, 310, 120, 60); plane3 = new Rectangle(360, 310, 120, 60); plane4 = new Rectangle(520, 310, 120, 60);
             storeRect = new Rectangle(630, 400, 150, 30); playRect = new Rectangle(430, 400, 150, 30); h2pRect = new Rectangle(230, 400, 150, 30); achievmentsRect = new Rectangle(30, 400, 150, 30);
             speedRect = new Rectangle(6, 97, 256, 171); amountRect = new Rectangle(272, 97, 256, 171); rateRect = new Rectangle(538, 97, 256, 171);
             coinsRect = new Rectangle(520, 10, 200, 50);
+            achievements.Add(new Achievements(rectangleTexture, coinTexture, new Rectangle(10, 10, 385, 60), Color.LightBlue, "Maverick Initiate", "10 Kills on 1 Run", achievementsFont, 10f));
+            achievements.Add(new Achievements(rectangleTexture, coinTexture, new Rectangle(10, 80, 385, 60), Color.CadetBlue, "Sky Dominator", "50 Kills on 1 Run", achievementsFont, 50f));
+            achievements.Add(new Achievements(rectangleTexture, coinTexture, new Rectangle(10, 150, 385, 60), Color.DarkViolet, "Aerial Ace", "100 Kills on 1 Run", achievementsFont, 100f));
+            achievements.Add(new Achievements(rectangleTexture, coinTexture, new Rectangle(10, 220, 385, 60), Color.LightBlue, "Ace Shooter", "50 Kills Total", achievementsFont, 10f));
+            achievements.Add(new Achievements(rectangleTexture, coinTexture, new Rectangle(10, 290, 385, 60), Color.CadetBlue, "Sky Conqueror", "100 Kills Total", achievementsFont, 50f));
+            achievements.Add(new Achievements(rectangleTexture, coinTexture, new Rectangle(10, 360, 385, 60), Color.DarkViolet, "Supreme Aviator", "500 Kills Total", achievementsFont, 100f));
+            achievements.Add(new Achievements(rectangleTexture, coinTexture, new Rectangle(405, 10, 385, 60), Color.LightBlue, "Survivor Novice", "Last 60 Seconds", achievementsFont, 10f));
+            achievements.Add(new Achievements(rectangleTexture, coinTexture, new Rectangle(405, 80, 385, 60), Color.CadetBlue, "Survivor Expert", "Last 180 Seconds", achievementsFont, 50f));
+            achievements.Add(new Achievements(rectangleTexture, coinTexture, new Rectangle(405, 150, 385, 60), Color.DarkViolet, "Survivor Master", "Last 300 Seconds", achievementsFont, 100f));
+            achievements.Add(new Achievements(rectangleTexture, coinTexture, new Rectangle(405, 220, 385, 60), Color.LightBlue, "Endurance Specialist", "600 Seconds Total", achievementsFont, 10f));
+            achievements.Add(new Achievements(rectangleTexture, coinTexture, new Rectangle(405, 290, 385, 60), Color.CadetBlue, "Timeless Aviator", "1000 Seconds Total", achievementsFont, 50f));
+            achievements.Add(new Achievements(rectangleTexture, coinTexture, new Rectangle(405, 360, 385, 60), Color.DarkViolet, "Eternal Sky Guardian", "2500 Seconds Total", achievementsFont, 100f));
+            //musicInstance.IsLooped = true;
+            //musicInstance.Play();
         }
 
         protected override void LoadContent()
@@ -123,6 +141,10 @@ namespace Dogfighter
             icerbergFont = Content.Load<SpriteFont>("IcebergFont");
             creditcardTexture = Content.Load<Texture2D>("credit_card");
             scopeTexture = Content.Load<Texture2D>("Scope");
+            h2pScreenTexture = Content.Load<Texture2D>("H2PScreen");
+            achievementsFont = Content.Load<SpriteFont>("AchievementsFont");
+            //var music = Content.Load<SoundEffect>("Music");
+            //musicInstance=music.CreateInstance();
             for (int i=0; i<6; i++)
             {
                 whatTexture.Add(false);
@@ -331,7 +353,57 @@ namespace Dogfighter
                     shots.Clear();
                     supershots.Clear();
                     enemyrate = 12; enemySpeed = 2; enemyFiringRate = 10; enemyShotSpeed = 4f;
+                    totalSecondsPlayed += (int)gameseconds;
                     coins += (float)(Math.Round(gameseconds/10) + kills);
+                    totalKills += kills;
+                    if (kills>=10 && achievements[0]._achieved == false)
+                    {
+                        achievements[0]._achieved=true;
+                    }
+                    if (kills >= 50 && achievements[1]._achieved == false)
+                    {
+                        achievements[1]._achieved = true;
+                    }
+                    if (kills >= 100 && achievements[2]._achieved == false)
+                    {
+                        achievements[2]._achieved = true;
+                    }
+                    if (totalKills >=50 && achievements[3]._achieved == false)
+                    {
+                        achievements[3]._achieved = true;
+                    }
+                    if (totalKills >= 100 && achievements[4]._achieved == false)
+                    {
+                        achievements[4]._achieved = true;
+                    }
+                    if (totalKills >= 500 && achievements[5]._achieved == false)
+                    {
+                        achievements[5]._achieved = true;
+                    }
+                    if (gameseconds >= 60 && achievements[6]._achieved == false)
+                    {
+                        achievements[6]._achieved = true;
+                    }
+                    if (gameseconds >= 180 && achievements[7]._achieved == false)
+                    {
+                        achievements[7]._achieved = true;
+                    }
+                    if (gameseconds >= 300 && achievements[8]._achieved == false)
+                    {
+                        achievements[8]._achieved = true;
+                    }
+                    if (totalSecondsPlayed>=600 && achievements[9]._achieved == false)
+                    {
+                        achievements[9]._achieved = true;
+                    }
+                    if (totalSecondsPlayed >= 1000 && achievements[10]._achieved == false)
+                    {
+                        achievements[10]._achieved = true;
+                    }
+                    if (totalSecondsPlayed >= 2500 && achievements[11]._achieved == false)
+                    {
+                        achievements[11]._achieved = true;
+                    }
                     kills = 0;
                 }
             }
@@ -478,9 +550,14 @@ namespace Dogfighter
             else if (screen == Screen.Achievements)
             {
                 keyboardState = Keyboard.GetState();
+                mouseState = Mouse.GetState();
                 if (keyboardState.IsKeyDown(Keys.Space))
                 {
                     screen = Screen.Start;
+                }
+                foreach (Achievements achievement in achievements)
+                {
+                    coins = achievement.Update(mouseState, coins);
                 }
             }
             else if (screen == Screen.H2P)
@@ -627,14 +704,21 @@ namespace Dogfighter
             {
                 _spriteBatch.Begin();
                 _spriteBatch.Draw(planeFrames[0], new Rectangle(0, 0, _graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight), Color.LightBlue);
-                _spriteBatch.DrawString(pressSpace, "PRESS SPACE TO RETURN", new Vector2(180, 400), Color.White);
+                foreach (Achievements achievement in achievements)
+                {
+                    achievement.Draw(_spriteBatch);
+                }
+                _spriteBatch.Draw(coinTexture, new Rectangle(10, 428, 45, 45), Color.White);
+                _spriteBatch.DrawString(ammoamount, "X " + coins, new Vector2(60, 443), Color.White);
+                _spriteBatch.DrawString(pressSpace, "PRESS SPACE TO RETURN", new Vector2(180, 425), Color.White);
                 _spriteBatch.End();
             }
             else if (screen == Screen.H2P)
             {
                 _spriteBatch.Begin();
                 _spriteBatch.Draw(planeFrames[0], new Rectangle(0, 0, _graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight), Color.LightBlue);
-                _spriteBatch.DrawString(pressSpace, "PRESS SPACE TO RETURN", new Vector2(180, 400), Color.White);
+                _spriteBatch.Draw(h2pScreenTexture, new Rectangle(70, 15, 650, 400), Color.White);
+                _spriteBatch.DrawString(pressSpace, "PRESS SPACE TO RETURN", new Vector2(180, 420), Color.White);
                 _spriteBatch.End();
             }
             base.Draw(gameTime);
