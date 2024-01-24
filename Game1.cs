@@ -105,8 +105,8 @@ namespace Dogfighter
             achievements.Add(new Achievements(rectangleTexture, coinTexture, new Rectangle(405, 220, 385, 60), Color.LightBlue, "Endurance Specialist", "600 Seconds Total", achievementsFont, 10f));
             achievements.Add(new Achievements(rectangleTexture, coinTexture, new Rectangle(405, 290, 385, 60), Color.CadetBlue, "Timeless Aviator", "1000 Seconds Total", achievementsFont, 50f));
             achievements.Add(new Achievements(rectangleTexture, coinTexture, new Rectangle(405, 360, 385, 60), Color.DarkViolet, "Eternal Sky Guardian", "2500 Seconds Total", achievementsFont, 100f));
-            //musicInstance.IsLooped = true;
-            //musicInstance.Play();
+            musicInstance.IsLooped = true;
+            musicInstance.Play();
         }
 
         protected override void LoadContent()
@@ -143,8 +143,8 @@ namespace Dogfighter
             scopeTexture = Content.Load<Texture2D>("Scope");
             h2pScreenTexture = Content.Load<Texture2D>("H2PScreen");
             achievementsFont = Content.Load<SpriteFont>("AchievementsFont");
-            //var music = Content.Load<SoundEffect>("Music");
-            //musicInstance=music.CreateInstance();
+            var music = Content.Load<SoundEffect>("Background Music");
+            musicInstance=music.CreateInstance();
             for (int i=0; i<6; i++)
             {
                 whatTexture.Add(false);
