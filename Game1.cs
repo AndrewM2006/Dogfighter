@@ -15,6 +15,7 @@ namespace Dogfighter
 {
     public class Game1 : Game
     {
+        // Andrew Monteith 2024
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
         Texture2D planeTexture, shotTexture, ammoTexture, missleTexture, enemyPlaneTexture, coinTexture, plane2Texture, plane3Texture, plane4Texture;
